@@ -38,6 +38,14 @@ namespace Vaktija
             timerSada.Enabled = true;
         }
 
+
+        private DateTime ParsirajNamaskoVrijeme(DateTime datum,string vakat)
+        {
+            var sati = vakat.Split(':');
+            var sat = int.Parse(sati[0]);
+            var minut = int.Parse(sati[1]);
+            return new DateTime(year: datum.Year, month: datum.Month, day: datum.Day, hour: sat, minute: minut,second:0);
+        }
         
 
         private List<Satnica> ucitajTxtDatoteku(string adreseFajle)
@@ -45,50 +53,81 @@ namespace Vaktija
             var satnice = new List<Satnica>();
             try
             {
-                
-                using (StreamReader sr = new StreamReader(path: adreseFajle))
+                var json = File.ReadAllText(adreseFajle);
+                var data = JsonConvert.DeserializeObject<Models.Root>(json);
+
+                int intMjesec = 0;
+                foreach (var mjsesc in data.mjesec)
                 {
-
-                    int i = 0;
-                    string currentLine;
-                    while ((currentLine = sr.ReadLine()) != null)
+                    intMjesec++;
+                    int intDan = 0;
+                    foreach (var dan in mjsesc.dan)
                     {
-                        i++;
-                        try
+                        intDan++;
+                        var datum = new DateTime(year: data.godina, month: intMjesec, day: intDan);
+                        Satnica satnica = new Satnica()
                         {
-                            Satnica satnica = new Satnica();
-
-                            /*varijanta sa babovima
-                            string sep = "\t";
-                            var red = currentLine.Split(sep.ToCharArray());
-                            */
-                            
-                            var red = currentLine.Split(' ');
-
-                            satnica.datum = DateTime.ParseExact(red[0], "dd.MM.yyyy", CultureInfo.InvariantCulture);
-
-                            satnica.zora = DateTime.ParseExact(red[0] + " " + red[2] + ":00", "dd.MM.yyyy H:mm:ss", CultureInfo.InvariantCulture);
-                            satnica.izlazak = DateTime.ParseExact(red[0] + " " + red[3] + ":00", "dd.MM.yyyy H:mm:ss", CultureInfo.InvariantCulture);
-                            satnica.podne = DateTime.ParseExact(red[0] + " " + red[4] + ":00", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture);
-                            satnica.ikindija = DateTime.ParseExact(red[0] + " " + red[5] + ":00", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture);
-                            satnica.aksam = DateTime.ParseExact(red[0] + " " + red[6] + ":00", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture);
-                            satnica.jacija = DateTime.ParseExact(red[0] + " " + red[7] + ":00", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+                            datum = datum,
+                            zora = ParsirajNamaskoVrijeme(datum, dan.vakat[0]),
+                            izlazak = ParsirajNamaskoVrijeme(datum, dan.vakat[1]),
+                            podne =   ParsirajNamaskoVrijeme(datum, dan.vakat[2]),
+                            ikindija = ParsirajNamaskoVrijeme(datum, dan.vakat[3]),
+                            aksam = ParsirajNamaskoVrijeme(datum, dan.vakat[4]),
+                            jacija = ParsirajNamaskoVrijeme(datum, dan.vakat[5])
+                             
+                        };
                             satnice.Add(satnica);
-                        }
-                        catch (Exception exS)
-                        {
-                            Console.WriteLine("Nisam učitao red {0} sa excetipnom {1} \n {2} \n", i, exS.Message, currentLine);
-                        }
+                        
                     }
                 }
-                this.labelLastEvent.Text = "Učitali smo VAKTIJU sa " + satnice.Count + (satnice.Count > 0 ? " datuma do datuma:" + satnice.Max(x => x.datum).ToString("dd.MM.yyyy") : " ");
+                this.labelLastEvent.Text = $"Učitali smo VAKTIJU za {data.godina} godinu Lokacija {data.lokacija} (u bazi imamo {satnice.Count} dana)" ;
+                return satnice;
+
+
+
+                //using (StreamReader sr = new StreamReader(path: adreseFajle))
+                //{
+
+                //    int i = 0;
+                //    string currentLine;
+                //    while ((currentLine = sr.ReadLine()) != null)
+                //    {
+                //        i++;
+                //        try
+                //        {
+                //            Satnica satnica = new Satnica();
+
+                //            /*varijanta sa babovima
+                //            string sep = "\t";
+                //            var red = currentLine.Split(sep.ToCharArray());
+                //            */
+
+                //            var red = currentLine.Split(' ');
+
+                //            satnica.datum = DateTime.ParseExact(red[0], "dd.MM.yyyy", CultureInfo.InvariantCulture);
+
+                //            satnica.zora = DateTime.ParseExact(red[0] + " " + red[2] + ":00", "dd.MM.yyyy H:mm:ss", CultureInfo.InvariantCulture);
+                //            satnica.izlazak = DateTime.ParseExact(red[0] + " " + red[3] + ":00", "dd.MM.yyyy H:mm:ss", CultureInfo.InvariantCulture);
+                //            satnica.podne = DateTime.ParseExact(red[0] + " " + red[4] + ":00", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+                //            satnica.ikindija = DateTime.ParseExact(red[0] + " " + red[5] + ":00", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+                //            satnica.aksam = DateTime.ParseExact(red[0] + " " + red[6] + ":00", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+                //            satnica.jacija = DateTime.ParseExact(red[0] + " " + red[7] + ":00", "dd.MM.yyyy HH:mm:ss", CultureInfo.InvariantCulture);
+                //            satnice.Add(satnica);
+                //        }
+                //        catch (Exception exS)
+                //        {
+                //            Console.WriteLine("Nisam učitao red {0} sa excetipnom {1} \n {2} \n", i, exS.Message, currentLine);
+                //        }
+                //    }
+                //}
+                //this.labelLastEvent.Text = "Učitali smo VAKTIJU sa " + satnice.Count + (satnice.Count > 0 ? " datuma do datuma:" + satnice.Max(x => x.datum).ToString("dd.MM.yyyy") : " ");
             }
             catch (Exception ex)
             {
                 this.labelLastEvent.Text = "Greška kod učitavanja vaktije iz TXT-a :" + ex.Message;
                 MessageBox.Show("Nisam učitao datoeku " + ex.Message);
+                return new List<Satnica>();
             }
-            return satnice;
         }        
 
         private void button1_Click(object sender, EventArgs e)
