@@ -2,16 +2,11 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Vaktija
@@ -39,14 +34,14 @@ namespace Vaktija
         }
 
 
-        private DateTime ParsirajNamaskoVrijeme(DateTime datum,string vakat)
+        private DateTime ParsirajNamaskoVrijeme(DateTime datum, string vakat)
         {
             var sati = vakat.Split(':');
             var sat = int.Parse(sati[0]);
             var minut = int.Parse(sati[1]);
-            return new DateTime(year: datum.Year, month: datum.Month, day: datum.Day, hour: sat, minute: minut,second:0);
+            return new DateTime(year: datum.Year, month: datum.Month, day: datum.Day, hour: sat, minute: minut, second: 0);
         }
-        
+
 
         private List<Satnica> ucitajTxtDatoteku(string adreseFajle)
         {
@@ -54,7 +49,7 @@ namespace Vaktija
             try
             {
                 var json = File.ReadAllText(adreseFajle);
-                var data = JsonConvert.DeserializeObject<Models.Root>(json);
+                var data = JsonConvert.DeserializeObject<Models.VaktijaModel>(json);
 
                 int intMjesec = 0;
                 foreach (var mjsesc in data.mjesec)
@@ -70,17 +65,17 @@ namespace Vaktija
                             datum = datum,
                             zora = ParsirajNamaskoVrijeme(datum, dan.vakat[0]),
                             izlazak = ParsirajNamaskoVrijeme(datum, dan.vakat[1]),
-                            podne =   ParsirajNamaskoVrijeme(datum, dan.vakat[2]),
+                            podne = ParsirajNamaskoVrijeme(datum, dan.vakat[2]),
                             ikindija = ParsirajNamaskoVrijeme(datum, dan.vakat[3]),
                             aksam = ParsirajNamaskoVrijeme(datum, dan.vakat[4]),
                             jacija = ParsirajNamaskoVrijeme(datum, dan.vakat[5])
-                             
+
                         };
-                            satnice.Add(satnica);
-                        
+                        satnice.Add(satnica);
+
                     }
                 }
-                this.labelLastEvent.Text = $"Učitali smo VAKTIJU za {data.godina} godinu Lokacija {data.lokacija} (u bazi imamo {satnice.Count} dana)" ;
+                this.labelLastEvent.Text = $"Učitali smo VAKTIJU za {data.godina} godinu Lokacija {data.lokacija} (u bazi imamo {satnice.Count} dana)";
                 return satnice;
 
 
@@ -128,7 +123,7 @@ namespace Vaktija
                 MessageBox.Show("Nisam učitao datoeku " + ex.Message);
                 return new List<Satnica>();
             }
-        }        
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -180,7 +175,7 @@ namespace Vaktija
             {
                 if (sp.Name.Contains("volumeSlider"))
                 {
-                    var slider = (NAudio.Gui.VolumeSlider)this.Controls.Find(sp.Name,false).FirstOrDefault();
+                    var slider = (NAudio.Gui.VolumeSlider)this.Controls.Find(sp.Name, false).FirstOrDefault();
 
                     slider.Volume = (float)Properties.Settings.Default[sp.Name];
 
@@ -207,7 +202,7 @@ namespace Vaktija
                 MessageBox.Show("Nemam učitane vakte i nemgu uštiamti namaska vremna");
                 return;
             }
-            var dan = vakti.Where(x => x.datum == date).FirstOrDefault(); 
+            var dan = vakti.Where(x => x.datum == date).FirstOrDefault();
 
             if (dan != null)
             {
@@ -235,7 +230,7 @@ namespace Vaktija
         {
             var dugme = (Button)sender;
             openFileDialogMp3.FileName = string.Empty;
-            openFileDialogMp3.Title = "Odaberite MP3 datoteku za ezan za " + dugme.Name.Replace("ezan","");
+            openFileDialogMp3.Title = "Odaberite MP3 datoteku za ezan za " + dugme.Name.Replace("ezan", "");
 
             var result = openFileDialogMp3.ShowDialog();
 
@@ -284,7 +279,7 @@ namespace Vaktija
         }
 
         private void button2_Click(object sender, EventArgs e)
-        { 
+        {
 
             if (wavePlayer != null && wavePlayer.PlaybackState == PlaybackState.Playing)
             {
@@ -318,7 +313,7 @@ namespace Vaktija
                 MessageBox.Show("Nisam uspijeo testirati sa greškom \n" + ex.Message);
 
             }
-            
+
         }
 
         private void WavePlayer_PlaybackStopped(object sender, StoppedEventArgs e)
@@ -364,7 +359,7 @@ namespace Vaktija
 
         private IWavePlayer CreateWavePlayer()
         {
-                    return new WaveOut();
+            return new WaveOut();
         }
 
         private void setujZaDanasIsutraVakte()
@@ -383,7 +378,7 @@ namespace Vaktija
                     MessageBox.Show("Nisam našao satnicu za danas ili sutra, molimo Vas provjeirte txt datoku i uključite mujesina ponovo");
                 }
 
-                if (zaSutra != null )
+                if (zaSutra != null)
                 {
                     zaDanas.zora = zaDanas.zora.AddMinutes(int.Parse(numericZora.Value.ToString()));
                     zaDanas.izlazak = zaDanas.izlazak.AddMinutes(int.Parse(numericIzlazak.Value.ToString()));
@@ -398,13 +393,13 @@ namespace Vaktija
             {
                 checkBoxMujezin.Checked = false;
 
-                MessageBox.Show("Nisam učitao vaktiju iz TXT-a molim vas provjerite postavke \n Molimo vas provjerite postavke i uključte mujezina ponvo","Nemam podataka", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Nisam učitao vaktiju iz TXT-a molim vas provjerite postavke \n Molimo vas provjerite postavke i uključte mujezina ponvo", "Nemam podataka", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void timerSada_Tick(object sender, EventArgs e)
         {
-           
+
             textBoxSada.Text = DateTime.Now.ToString("HH:mm:ss");
 
             if (zaDanas == null || zaSutra == null)
@@ -414,7 +409,7 @@ namespace Vaktija
             }
             if (DateTime.Today != danas)
             {
-                labelLastEvent.Text = "Novi dan nova nafaka"+DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
+                labelLastEvent.Text = "Novi dan nova nafaka" + DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss");
                 setujZaDanasIsutraVakte();
                 if (zaDanas == null || zaSutra == null)
                 {
@@ -437,7 +432,7 @@ namespace Vaktija
                 {
                     Ukuisi(Ezani.Podne);
                 }
-                else if (checkBoxPodne.Checked && sada.Hour == 12 && sada.Minute ==0 && !tzi.IsDaylightSavingTime(sada)  )
+                else if (checkBoxPodne.Checked && sada.Hour == 12 && sada.Minute == 0 && !tzi.IsDaylightSavingTime(sada))
                 {
                     Ukuisi(Ezani.Podne);
                 }
@@ -467,11 +462,11 @@ namespace Vaktija
             {
                 SetMujezinTimers(Ezani.Izlazak, zaDanas.izlazak);
             }
-            else if (sada < zaDanas.podne   && !checkBoxPodne.Checked)
+            else if (sada < zaDanas.podne && !checkBoxPodne.Checked)
             {
                 SetMujezinTimers(Ezani.Podne, zaDanas.podne);
             }
-            else if (checkBoxPodne.Checked && sada.Hour < 12  && !tzi.IsDaylightSavingTime(sada))
+            else if (checkBoxPodne.Checked && sada.Hour < 12 && !tzi.IsDaylightSavingTime(sada))
             {
                 DateTime dateTimePodne = new DateTime();
                 dateTimePodne = DateTime.Today.AddHours(12);
@@ -499,7 +494,7 @@ namespace Vaktija
             {
                 SetMujezinTimers(Ezani.Izlazak, zaSutra.izlazak);
             }
-            kraj:
+        kraj:
             Console.WriteLine("kraj");
         }
 
@@ -507,7 +502,7 @@ namespace Vaktija
         {
             textBoxSlijedeciNamaz.Text = vakat.ToString("HH:mm");
 
-            var minuta = vakat -DateTime.Now  ;
+            var minuta = vakat - DateTime.Now;
 
             textBoxDoNamaza.Text = minuta.Hours.ToString() + ":" + minuta.Minutes.ToString() + ":" + minuta.Seconds.ToString();
 
@@ -529,7 +524,7 @@ namespace Vaktija
                     textBoxSlijedeciNamazLbl.Text = "Akšam";
                     break;
                 case Ezani.Jacija:
-                        textBoxSlijedeciNamazLbl.Text = "Jacija";
+                    textBoxSlijedeciNamazLbl.Text = "Jacija";
                     break;
             }
         }
@@ -544,7 +539,7 @@ namespace Vaktija
             {
                 return;
             }
-            var cehcBox = (CheckBox)this.Controls.Find("ezani" + ezan.ToString(),true).FirstOrDefault();
+            var cehcBox = (CheckBox)this.Controls.Find("ezani" + ezan.ToString(), true).FirstOrDefault();
             if (!cehcBox.Checked)
             {
                 return;
@@ -557,7 +552,7 @@ namespace Vaktija
 
             var slider = (NAudio.Gui.VolumeSlider)this.Controls.Find(sslider, false).FirstOrDefault();
 
-            
+
             try
             {
                 Debug.Assert(wavePlayer == null);
@@ -577,9 +572,9 @@ namespace Vaktija
             }
 
 
-            
 
-            
+
+
 
 
         }
@@ -595,7 +590,7 @@ namespace Vaktija
         {
             var cb = (CheckBox)sender;
             timerSada.Enabled = cb.Checked;
-            
+
             if (!cb.Checked)
             {
                 textBoxSada.Text = "Mujezin je";
@@ -616,7 +611,7 @@ namespace Vaktija
 
         }
 
-        public enum Ezani { Zora,Izlazak,Podne,Ikindija,Aksam,Jacija }
+        public enum Ezani { Zora, Izlazak, Podne, Ikindija, Aksam, Jacija }
 
         private void buttonStopEzan_Click(object sender, EventArgs e)
         {
@@ -633,7 +628,7 @@ namespace Vaktija
 
         private void TesterPojacivac_VolumeChanged(object sender, EventArgs e)
         {
-            if (wavePlayer != null && wavePlayer.PlaybackState == PlaybackState.Playing && audioFileReader != null )
+            if (wavePlayer != null && wavePlayer.PlaybackState == PlaybackState.Playing && audioFileReader != null)
             {
                 var volume = (NAudio.Gui.VolumeSlider)sender;
                 audioFileReader.Volume = volume.Volume;
@@ -649,10 +644,27 @@ namespace Vaktija
         private void button4_Click(object sender, EventArgs e)
         {
             var json = File.ReadAllText(System.IO.Path.Combine(Environment.CurrentDirectory, "VaktijaJson.txt"));
-            var data = JsonConvert.DeserializeObject<Models.Root>(json);
+            var data = JsonConvert.DeserializeObject<Models.VaktijaModel>(json);
 
-            
 
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            ApiDownload apiDownload = new ApiDownload();
+            var dialogResult = apiDownload.ShowDialog();
+            if (dialogResult == DialogResult.OK)
+            {
+
+
+                Properties.Settings.Default.txtFajla = apiDownload.Path;
+                this.textBoxExcelFajla.Text = apiDownload.Path;
+                Properties.Settings.Default.Save();
+                Properties.Settings.Default.Reload();
+                refresh();
+
+            }
         }
     }
 }

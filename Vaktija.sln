@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2008
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaktija", "Vaktija\Vaktija.csproj", "{743C4B2B-2CFA-48D8-BC23-09B27D221553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vaktija", "Vaktija\Vaktija.csproj", "{743C4B2B-2CFA-48D8-BC23-09B27D221553}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VaktijaSehll", "VaktijaSehll\VaktijaSehll.csproj", "{C780F84D-9BE8-41E2-962A-88163E6D56B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VaktijaMaui", "VaktijaMaui\VaktijaMaui.csproj", "{20465900-090D-4068-BC63-629D62164DB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AndroidMujezin", "AndroidMujezin\AndroidMujezin.csproj", "{7D24E7B3-DDF3-47E0-8660-BF2A4DBEAAA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShinyMujezin", "ShinyMujezin\ShinyMujezin.csproj", "{BA36DDFF-4648-4C62-B15B-FDF936CF6C02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,28 @@ Global
 		{743C4B2B-2CFA-48D8-BC23-09B27D221553}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{743C4B2B-2CFA-48D8-BC23-09B27D221553}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{743C4B2B-2CFA-48D8-BC23-09B27D221553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C780F84D-9BE8-41E2-962A-88163E6D56B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C780F84D-9BE8-41E2-962A-88163E6D56B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C780F84D-9BE8-41E2-962A-88163E6D56B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C780F84D-9BE8-41E2-962A-88163E6D56B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20465900-090D-4068-BC63-629D62164DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20465900-090D-4068-BC63-629D62164DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20465900-090D-4068-BC63-629D62164DB3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{20465900-090D-4068-BC63-629D62164DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20465900-090D-4068-BC63-629D62164DB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20465900-090D-4068-BC63-629D62164DB3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7D24E7B3-DDF3-47E0-8660-BF2A4DBEAAA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D24E7B3-DDF3-47E0-8660-BF2A4DBEAAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D24E7B3-DDF3-47E0-8660-BF2A4DBEAAA2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7D24E7B3-DDF3-47E0-8660-BF2A4DBEAAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D24E7B3-DDF3-47E0-8660-BF2A4DBEAAA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D24E7B3-DDF3-47E0-8660-BF2A4DBEAAA2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BA36DDFF-4648-4C62-B15B-FDF936CF6C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA36DDFF-4648-4C62-B15B-FDF936CF6C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA36DDFF-4648-4C62-B15B-FDF936CF6C02}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BA36DDFF-4648-4C62-B15B-FDF936CF6C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA36DDFF-4648-4C62-B15B-FDF936CF6C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA36DDFF-4648-4C62-B15B-FDF936CF6C02}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,186 @@
+﻿@page "/"
+
+@using Microsoft.Maui.Controls.PlatformConfiguration;
+@using Plugin.Maui.Audio;
+@using AndroidMujezin;
+
+@inject IAudioManager audioManager;
+@inject IServicesTest Services_;
+@inject IMessage message_;
+
+<h1>Hello, world!</h1>
+<button @onclick="OdaberiFajlu">Find file </button>
+<button @onclick="PlayFromFile">Play form file </button>
+<br />
+
+<span>@Fajla</span> <br />
+<button @onclick="PlayAudio">Play </button><br />
+<button @onclick="stop">Stop</button>
+<br />
+
+<br />
+<button @onclick="timerStart">@($"{((timer?.IsRunning ?? false) ? "Zaustavi timer" : "Pokreni timer")}")</button>
+<br />
+@foreach (var s in tikTok)
+{
+    <span>@s</span><br />
+}
+
+
+@code{
+    private string Fajla { get; set; } = "azan1.mp3";
+
+
+    public IDispatcherTimer timer;
+
+    public IAudioPlayer audioPlayer;
+
+    IServicesTest Services;
+    private  IMessage message;
+
+
+    private List<string> tikTok = new List<string>();
+
+    private DateTime ts  { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        #if ANDROID
+    DeviceDisplay.Current.KeepScreenOn = true;
+        #endif
+
+        Services = Services_;
+        this.message = message_;
+
+
+        tikTok.Add($"Initialized at {DateTime.Now.ToString("HH:mm:ss")}");
+        this.ts = DateTime.Now;
+    }
+
+
+
+    public bool ticked()
+    {
+
+
+        return true;
+    }
+
+
+    private void timerStart()
+    {
+
+       
+        
+
+        if (timer == null)
+        {
+            Services.Start();
+            timer = Application.Current.Dispatcher.CreateTimer();
+            timer.Interval = TimeSpan.FromSeconds(10);
+            timer.Tick += (s, e) => DoSomething();
+            timer.Start();
+            SemanticScreenReader.Announce("Mujezin se upalio ");
+
+        }
+        else if (timer.IsRunning)
+        {
+            timer.Stop();
+            Services.Stop();
+            SemanticScreenReader.Announce("Mujezin se ugasio ");
+
+        }
+
+        else
+        {
+            Services.Start();
+            timer.Start();
+            SemanticScreenReader.Announce("Mujezin se upalio ");
+
+        }
+
+    }
+
+    public async void DoSomething()
+    {
+       // MainThread.BeginInvokeOnMainThread(() =>
+        //{
+        this.tikTok.Insert(0,DateTime.Now.ToString("HH:mm:ss"));
+        if (DateTime.Now.Subtract(ts).TotalMinutes>2 )
+        {
+            this.tikTok.Insert(0, "Svirao bih");
+            
+
+            this.audioPlayer = audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("amplePhone.mp3"));
+            
+            this.audioPlayer.Play();
+            this.ts = DateTime.Now;
+        }
+         StateHasChanged();
+        //});
+    }
+
+    public  void PlayFromFile()
+    {
+        var stream = File.OpenRead(Fajla);
+        audioPlayer = AudioManager.Current.CreatePlayer(stream); // works
+        audioPlayer.Play();
+    }
+
+
+    public async  void PlayAudio()
+    {
+        audioPlayer = audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("amplePhone.mp3"));
+        audioPlayer.Play();
+    }
+
+    public void stop()
+    {
+        if (audioPlayer != null && audioPlayer.IsPlaying)
+            audioPlayer.Stop();
+
+    }
+
+    public async Task OdaberiFajlu()
+    {
+        try
+        {
+            var customFileType = new FilePickerFileType(
+                new Dictionary<DevicePlatform, IEnumerable<string>>
+                    {
+
+                        { DevicePlatform.Android, new[] { "audio/mpeg" } }, // MIME type
+                        { DevicePlatform.WinUI, new[] { ".mp3", ".mp3" } }, // file extension
+                    });
+
+            PickOptions options = new()
+                {
+                    PickerTitle = "Odaberite zan",
+                    FileTypes = customFileType,
+                };
+
+
+            var result = await FilePicker.Default.PickAsync(options);
+
+            this.Fajla = result.FullPath;
+        }
+        catch (Exception ex)
+        {
+            this.Fajla = string.Empty;
+        }
+
+    }
+    private void OnCounterClicked(object sender, EventArgs e)
+    {
+       
+
+      
+    }
+
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        Services.Stop();
+    }
+
+
+}
