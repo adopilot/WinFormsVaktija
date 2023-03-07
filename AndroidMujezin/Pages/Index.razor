@@ -7,10 +7,12 @@
 @inject IAudioManager audioManager;
 @inject IServicesTest Services_;
 @inject IMessage message_;
+@inject AndroidMujezin.Servisi.ConfigServis _configServis
+
 
 <h1>Hello, world!</h1>
-<button @onclick="OdaberiFajlu">Find file </button>
-<button @onclick="PlayFromFile">Play form file </button>
+<button @onclick="OdaberiFajlu" class="btn btn-primary" type="button">Find file </button>
+<button @onclick="PlayFromFile" class="btn btn-primary" type="button" disabled="@(!PlayFromFileEnabled)">Play form file </button>
 <br />
 
 <span>@Fajla</span> <br />
@@ -38,23 +40,31 @@
     IServicesTest Services;
     private  IMessage message;
 
+    private Modeli.ConfigModel configModel { get => _configServis.getModel(); set => _configServis.setModel(value); }
 
     private List<string> tikTok = new List<string>();
 
     private DateTime ts  { get; set; }
 
+    private bool PlayFromFileEnabled { get; set; }
+
     protected override async Task OnInitializedAsync()
     {
         #if ANDROID
-    DeviceDisplay.Current.KeepScreenOn = true;
+            DeviceDisplay.Current.KeepScreenOn = true;
         #endif
+    Services = Services_;
+    this.message = message_;
+    
 
-        Services = Services_;
-        this.message = message_;
+
 
 
         tikTok.Add($"Initialized at {DateTime.Now.ToString("HH:mm:ss")}");
         this.ts = DateTime.Now;
+
+
+        tikTok.Add(configModel.EzanAksam);
     }
 
 
@@ -70,8 +80,8 @@
     private void timerStart()
     {
 
-       
-        
+
+
 
         if (timer == null)
         {
@@ -80,14 +90,15 @@
             timer.Interval = TimeSpan.FromSeconds(10);
             timer.Tick += (s, e) => DoSomething();
             timer.Start();
-            SemanticScreenReader.Announce("Mujezin se upalio ");
+
+            //SemanticScreenReader.Announce("Mujezin se upalio ");
 
         }
         else if (timer.IsRunning)
         {
             timer.Stop();
             Services.Stop();
-            SemanticScreenReader.Announce("Mujezin se ugasio ");
+            //SemanticScreenReader.Announce("Mujezin se ugasio ");
 
         }
 
@@ -95,7 +106,7 @@
         {
             Services.Start();
             timer.Start();
-            SemanticScreenReader.Announce("Mujezin se upalio ");
+            //SemanticScreenReader.Announce("Mujezin se upalio ");
 
         }
 
@@ -103,20 +114,20 @@
 
     public async void DoSomething()
     {
-       // MainThread.BeginInvokeOnMainThread(() =>
+        // MainThread.BeginInvokeOnMainThread(() =>
         //{
         this.tikTok.Insert(0,DateTime.Now.ToString("HH:mm:ss"));
         if (DateTime.Now.Subtract(ts).TotalMinutes>2 )
         {
             this.tikTok.Insert(0, "Svirao bih");
-            
+
 
             this.audioPlayer = audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync("amplePhone.mp3"));
-            
+
             this.audioPlayer.Play();
             this.ts = DateTime.Now;
         }
-         StateHasChanged();
+        StateHasChanged();
         //});
     }
 
@@ -149,7 +160,7 @@
                 new Dictionary<DevicePlatform, IEnumerable<string>>
                     {
 
-                        { DevicePlatform.Android, new[] { "audio/mpeg" } }, // MIME type
+                        { DevicePlatform.Android, new[] { "audio/*" } }, // MIME type
                         { DevicePlatform.WinUI, new[] { ".mp3", ".mp3" } }, // file extension
                     });
 
@@ -162,13 +173,23 @@
 
             var result = await FilePicker.Default.PickAsync(options);
 
-            this.Fajla = result.FullPath;
+            if (result != null)
+            {
+                this.Fajla = result.FullPath;
+                this.configModel.EzanAksam = result.FullPath;
+                this.PlayFromFileEnabled = true;
+            }
+            else
+            {
+                this.Fajla = "Odaberite daotkeu";
+                this.PlayFromFileEnabled = false;
+            }
         }
         catch (Exception ex)
         {
             this.Fajla = string.Empty;
         }
-
+        StateHasChanged();
     }
     private void OnCounterClicked(object sender, EventArgs e)
     {

@@ -1,0 +1,55 @@
+﻿@inject AndroidMujezin.Servisi.ConfigServis _configServis
+@inject AndroidMujezin.Servisi.VaktijaApiServis _vaktijaApi
+
+@page "/baza"
+<h1>Baza podataka</h1>
+<div class="mb-3">
+    <label for="mestoSelect" class="form-label">Mjesto</label>
+<select id="mestoSelect" @bind="SelectedMjesto" class="form-select" aria-label="Odaberite mijesto">
+    @foreach (var mjesto in mjesta.Select(x=>x).OrderBy(x=>x)){
+        <option>@mjesto</option>
+    }
+</select>
+</div>
+<div >
+<label> Godina: </label>
+<input class="form-control" type="number" @bind="Godina" />
+</div>
+<button class="btn btn-primary" @onclick="PovuciBazu">Povuci bazu</button>
+
+
+@code {
+    private Modeli.ConfigModel _configModel { get; set; }
+
+    private int Godina { get; set; } 
+
+    private string SelectedMjesto { get;set; } 
+
+    private string baza { get; set; }
+
+    private List<string> mjesta { get; set; } = new List<string>();
+
+    protected override  async Task OnInitializedAsync()
+    {
+        mjesta =await _vaktijaApi.Mjesta();
+        _configModel = _configServis.getModel();
+        var rgod= _configModel.Rgod;
+        if (rgod == 0)
+        {
+            _configModel.Rgod = DateTime.Now.Year;
+            Godina = DateTime.Now.Year;
+        }
+        else
+        {
+            _configModel.Rgod = DateTime.Now.Year;
+        }
+        await Task.Delay(10);
+
+    }
+    private  void PovuciBazu()
+    {
+        _configModel.Mjesto = SelectedMjesto;
+        _configModel.Rgod = Godina;
+        _configServis.setModel(_configModel);
+    }
+}

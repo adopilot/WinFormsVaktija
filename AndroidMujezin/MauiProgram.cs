@@ -4,7 +4,8 @@ using Microsoft.Maui;
 using Plugin.Maui.Audio;
 using System.Diagnostics;
 using System.Xml.Linq;
-
+using AndroidMujezin.Data;
+using AndroidMujezin.Servisi;
 
 namespace AndroidMujezin
 {
@@ -24,7 +25,11 @@ namespace AndroidMujezin
 #if ANDROID
         builder.Services.AddTransient<IServicesTest, DemoServices>();
         builder.Services.AddTransient<IMessage, MessageTest>();
+#elif WINDOWS
+        builder.Services.AddTransient<IMessage, AndroidMujezin.Platforms.Windows.MessageTest>();
+        builder.Services.AddTransient<IServicesTest, AndroidMujezin.Platforms.Windows.MujezinWinService>();
 #endif
+
 
             builder.Services.AddMauiBlazorWebView();
 #if DEBUG
@@ -33,8 +38,9 @@ namespace AndroidMujezin
 
             builder.Services.AddSingleton(AudioManager.Current);
             builder.Services.AddSingleton<Servisi.ConfigServis>();
-            
-
+            builder.Services.AddSingleton<WeatherForecastService>();
+            //            builder.Services.AddSingleton<IFileSaver>();
+            builder.Services.AddScoped<VaktijaApiServis>();
             return builder.Build();
         }
     }

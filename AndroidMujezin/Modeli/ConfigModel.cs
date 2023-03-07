@@ -37,6 +37,13 @@ namespace AndroidMujezin.Modeli
 
         public string Baza { get;  set; }
 
-        public List<string> Baze { get; set; }
+        public string ApiUrl { get; set; } = "https://api.vaktija.ba";
+
+        public string Mjesto { get; set; }="Sarajevo";
+
+        public int Rgod { get; set; } = DateTime.Now.Year;
+
+
+        //public List<string> Baze { get; set; }
     }
 }
