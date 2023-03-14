@@ -16,7 +16,7 @@ namespace Vaktija.Models
         public List<Dan> dan { get; set; }
     }
 
-    public class Root
+    public class VaktijaModel
     {
         public int id { get; set; }
         public string lokacija { get; set; }

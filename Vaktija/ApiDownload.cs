@@ -11,6 +11,8 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
+using System.IO;
 using Vaktija.Models;
 
 namespace Vaktija
@@ -47,22 +49,24 @@ namespace Vaktija
         {
             using (HttpClient client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Accept.Add(
-                    new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
-                client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
+            client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
 
 
-                var json = await client.GetStringAsync("https://api.vaktija.ba/vaktija/v1/lokacije");
+            var json = await client.GetStringAsync("https://api.vaktija.ba/vaktija/v1/lokacije");
 
 
-                lokacije = JsonConvert.DeserializeObject<string[]>(json);
+            lokacije = JsonConvert.DeserializeObject<string[]>(json);
 
-                this.comboBox1.Items.AddRange(lokacije);
+            this.comboBox1.Items.AddRange(lokacije);
             }
 
 
+
         }
+
         private async Task<bool> SpasiDatoteku()
         {
             var lokacija = this.comboBox1.SelectedItem as string;
@@ -82,40 +86,51 @@ namespace Vaktija
 
             using (HttpClient client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Accept.Add(
-                    new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
-                client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
+            client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
 
 
-                var json = await client.GetStringAsync($"https://api.vaktija.ba/vaktija/v1/{ix}/{this.godinaNumeric.Value}");
+            var json = await client.GetStringAsync($"https://api.vaktija.ba/vaktija/v1/{ix}/{this.godinaNumeric.Value}");
 
                 VaktijaModel model = JsonConvert.DeserializeObject<VaktijaModel>(json);
 
-                if (model == null)
-                {
-                    MessageBox.Show("Nešto nije urdu sa podatcimsa va vaktija api-a");
-                    return false;
-                }
+            if (model == null)
+            {
+                MessageBox.Show("Nešto nije urdu sa podatcimsa va vaktija api-a");
+                return false;
+            }
 
                 this.Path = System.IO.Path.Combine(Environment.CurrentDirectory, $"vakts_{ix}_{this.godinaNumeric.Value}.txt");
 
-                if (File.Exists(this.Path))
+            if (File.Exists(this.Path))
+            {
+                try
                 {
-                    try
-                    {
-                        File.Delete(Path);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, "Nisam uspijeo pregaziti datotkeu");
-                        return false;
-                    }
+                    File.Delete(Path);
                 }
+                    catch (Exception ex)
+                {
+                        MessageBox.Show(ex.Message, "Nisam uspijeo pregaziti datotkeu");
+                    return false;
+                }
+            }
                 File.WriteAllText(this.Path, json);
 
-                return true;
-            }
+            return true;
+
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            var ado = await SpasiDatoteku();
+            if (ado)
+            {
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }    
+
         }
     }
 }

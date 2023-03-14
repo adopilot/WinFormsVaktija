@@ -20,6 +20,9 @@
             base.Dispose(disposing);
         }
 
+
+
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -105,5 +108,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.NumericUpDown godinaNumeric;
+        private System.Windows.Forms.Button button1;
     }
 }

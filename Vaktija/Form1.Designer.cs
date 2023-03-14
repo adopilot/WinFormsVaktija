@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxExcelFajla = new System.Windows.Forms.TextBox();
@@ -99,21 +99,21 @@
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
             // 
             // textBoxExcelFajla
             // 
-            resources.ApplyResources(this.textBoxExcelFajla, "textBoxExcelFajla");
-            this.textBoxExcelFajla.Name = "textBoxExcelFajla";
-            this.textBoxExcelFajla.ReadOnly = true;
+            resources.ApplyResources(textBoxExcelFajla, "textBoxExcelFajla");
+            textBoxExcelFajla.Name = "textBoxExcelFajla";
+            textBoxExcelFajla.ReadOnly = true;
             // 
             // button1
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            resources.ApplyResources(button1, "button1");
+            button1.Name = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // openFileDialogExcel
             // 
@@ -121,203 +121,185 @@
             // 
             // monthCalendar1
             // 
-            resources.ApplyResources(this.monthCalendar1, "monthCalendar1");
-            this.monthCalendar1.MaxSelectionCount = 1;
-            this.monthCalendar1.MinDate = new System.DateTime(2017, 1, 1, 0, 0, 0, 0);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateSelected);
+            resources.ApplyResources(monthCalendar1, "monthCalendar1");
+            monthCalendar1.MaxSelectionCount = 1;
+            monthCalendar1.MinDate = new System.DateTime(2017, 1, 1, 0, 0, 0, 0);
+            monthCalendar1.Name = "monthCalendar1";
+            monthCalendar1.DateSelected += monthCalendar1_DateSelected;
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(label2, "label2");
+            label2.Name = "label2";
             // 
             // label3
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
             // 
             // label4
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            resources.ApplyResources(label4, "label4");
+            label4.Name = "label4";
             // 
             // label5
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
+            resources.ApplyResources(label5, "label5");
+            label5.Name = "label5";
             // 
             // label6
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
+            resources.ApplyResources(label6, "label6");
+            label6.Name = "label6";
             // 
             // label7
             // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
+            resources.ApplyResources(label7, "label7");
+            label7.Name = "label7";
             // 
             // textBoxZora
             // 
-            resources.ApplyResources(this.textBoxZora, "textBoxZora");
-            this.textBoxZora.Name = "textBoxZora";
-            this.textBoxZora.ReadOnly = true;
+            resources.ApplyResources(textBoxZora, "textBoxZora");
+            textBoxZora.Name = "textBoxZora";
+            textBoxZora.ReadOnly = true;
             // 
             // textBoxIzlazak
             // 
-            resources.ApplyResources(this.textBoxIzlazak, "textBoxIzlazak");
-            this.textBoxIzlazak.Name = "textBoxIzlazak";
-            this.textBoxIzlazak.ReadOnly = true;
+            resources.ApplyResources(textBoxIzlazak, "textBoxIzlazak");
+            textBoxIzlazak.Name = "textBoxIzlazak";
+            textBoxIzlazak.ReadOnly = true;
             // 
             // textBoxPodne
             // 
-            resources.ApplyResources(this.textBoxPodne, "textBoxPodne");
-            this.textBoxPodne.Name = "textBoxPodne";
-            this.textBoxPodne.ReadOnly = true;
+            resources.ApplyResources(textBoxPodne, "textBoxPodne");
+            textBoxPodne.Name = "textBoxPodne";
+            textBoxPodne.ReadOnly = true;
             // 
             // textBoxIkindija
             // 
-            resources.ApplyResources(this.textBoxIkindija, "textBoxIkindija");
-            this.textBoxIkindija.Name = "textBoxIkindija";
-            this.textBoxIkindija.ReadOnly = true;
+            resources.ApplyResources(textBoxIkindija, "textBoxIkindija");
+            textBoxIkindija.Name = "textBoxIkindija";
+            textBoxIkindija.ReadOnly = true;
             // 
             // textBoxAksam
             // 
-            resources.ApplyResources(this.textBoxAksam, "textBoxAksam");
-            this.textBoxAksam.Name = "textBoxAksam";
-            this.textBoxAksam.ReadOnly = true;
+            resources.ApplyResources(textBoxAksam, "textBoxAksam");
+            textBoxAksam.Name = "textBoxAksam";
+            textBoxAksam.ReadOnly = true;
             // 
             // textBoxJacija
             // 
-            resources.ApplyResources(this.textBoxJacija, "textBoxJacija");
-            this.textBoxJacija.Name = "textBoxJacija";
-            this.textBoxJacija.ReadOnly = true;
+            resources.ApplyResources(textBoxJacija, "textBoxJacija");
+            textBoxJacija.Name = "textBoxJacija";
+            textBoxJacija.ReadOnly = true;
             // 
             // ezaniZora
             // 
-            resources.ApplyResources(this.ezaniZora, "ezaniZora");
-            this.ezaniZora.Name = "ezaniZora";
-            this.ezaniZora.UseVisualStyleBackColor = true;
-            this.ezaniZora.CheckedChanged += new System.EventHandler(this.ezaniZora_CheckedChanged);
+            resources.ApplyResources(ezaniZora, "ezaniZora");
+            ezaniZora.Name = "ezaniZora";
+            ezaniZora.UseVisualStyleBackColor = true;
+            ezaniZora.CheckedChanged += ezaniZora_CheckedChanged;
             // 
             // ezaniIzlazak
             // 
-            resources.ApplyResources(this.ezaniIzlazak, "ezaniIzlazak");
-            this.ezaniIzlazak.Name = "ezaniIzlazak";
-            this.ezaniIzlazak.UseVisualStyleBackColor = true;
-            this.ezaniIzlazak.CheckedChanged += new System.EventHandler(this.ezaniZora_CheckedChanged);
+            resources.ApplyResources(ezaniIzlazak, "ezaniIzlazak");
+            ezaniIzlazak.Name = "ezaniIzlazak";
+            ezaniIzlazak.UseVisualStyleBackColor = true;
+            ezaniIzlazak.CheckedChanged += ezaniZora_CheckedChanged;
             // 
             // ezaniPodne
             // 
-            resources.ApplyResources(this.ezaniPodne, "ezaniPodne");
-            this.ezaniPodne.Name = "ezaniPodne";
-            this.ezaniPodne.UseVisualStyleBackColor = true;
-            this.ezaniPodne.CheckedChanged += new System.EventHandler(this.ezaniZora_CheckedChanged);
+            resources.ApplyResources(ezaniPodne, "ezaniPodne");
+            ezaniPodne.Name = "ezaniPodne";
+            ezaniPodne.UseVisualStyleBackColor = true;
+            ezaniPodne.CheckedChanged += ezaniZora_CheckedChanged;
             // 
             // ezaniIkindija
             // 
-            resources.ApplyResources(this.ezaniIkindija, "ezaniIkindija");
-            this.ezaniIkindija.Name = "ezaniIkindija";
-            this.ezaniIkindija.UseVisualStyleBackColor = true;
-            this.ezaniIkindija.CheckedChanged += new System.EventHandler(this.ezaniZora_CheckedChanged);
+            resources.ApplyResources(ezaniIkindija, "ezaniIkindija");
+            ezaniIkindija.Name = "ezaniIkindija";
+            ezaniIkindija.UseVisualStyleBackColor = true;
+            ezaniIkindija.CheckedChanged += ezaniZora_CheckedChanged;
             // 
             // ezaniAksam
             // 
-            resources.ApplyResources(this.ezaniAksam, "ezaniAksam");
-            this.ezaniAksam.Name = "ezaniAksam";
-            this.ezaniAksam.UseVisualStyleBackColor = true;
-            this.ezaniAksam.CheckedChanged += new System.EventHandler(this.ezaniZora_CheckedChanged);
+            resources.ApplyResources(ezaniAksam, "ezaniAksam");
+            ezaniAksam.Name = "ezaniAksam";
+            ezaniAksam.UseVisualStyleBackColor = true;
+            ezaniAksam.CheckedChanged += ezaniZora_CheckedChanged;
             // 
             // ezaniJacija
             // 
-            resources.ApplyResources(this.ezaniJacija, "ezaniJacija");
-            this.ezaniJacija.Name = "ezaniJacija";
-            this.ezaniJacija.UseVisualStyleBackColor = true;
-            this.ezaniJacija.CheckedChanged += new System.EventHandler(this.ezaniZora_CheckedChanged);
+            resources.ApplyResources(ezaniJacija, "ezaniJacija");
+            ezaniJacija.Name = "ezaniJacija";
+            ezaniJacija.UseVisualStyleBackColor = true;
+            ezaniJacija.CheckedChanged += ezaniZora_CheckedChanged;
             // 
             // numericZora
             // 
-            resources.ApplyResources(this.numericZora, "numericZora");
-            this.numericZora.Maximum = new decimal(new int[] {
-            80000,
-            0,
-            0,
-            0});
-            this.numericZora.Minimum = new decimal(new int[] {
-            120,
-            0,
-            0,
-            -2147483648});
-            this.numericZora.Name = "numericZora";
-            this.numericZora.ValueChanged += new System.EventHandler(this.numericZora_ValueChanged);
+            resources.ApplyResources(numericZora, "numericZora");
+            numericZora.Maximum = new decimal(new int[] { 80000, 0, 0, 0 });
+            numericZora.Name = "numericZora";
+            numericZora.ValueChanged += numericZora_ValueChanged;
             // 
             // numericIzlazak
             // 
-            resources.ApplyResources(this.numericIzlazak, "numericIzlazak");
-            this.numericIzlazak.Maximum = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.numericIzlazak.Minimum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            -2147483648});
-            this.numericIzlazak.Name = "numericIzlazak";
-            this.numericIzlazak.ValueChanged += new System.EventHandler(this.numericIzlazak_ValueChanged);
+            resources.ApplyResources(numericIzlazak, "numericIzlazak");
+            numericIzlazak.Maximum = new decimal(new int[] { 0, 0, 0, 0 });
+            numericIzlazak.Name = "numericIzlazak";
+            numericIzlazak.ValueChanged += numericIzlazak_ValueChanged;
             // 
             // label8
             // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
+            resources.ApplyResources(label8, "label8");
+            label8.Name = "label8";
             // 
             // label9
             // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
+            resources.ApplyResources(label9, "label9");
+            label9.Name = "label9";
             // 
             // ezanZora
             // 
-            resources.ApplyResources(this.ezanZora, "ezanZora");
-            this.ezanZora.Name = "ezanZora";
-            this.ezanZora.UseVisualStyleBackColor = true;
-            this.ezanZora.Click += new System.EventHandler(this.buttonEzanZora_Click);
+            resources.ApplyResources(ezanZora, "ezanZora");
+            ezanZora.Name = "ezanZora";
+            ezanZora.UseVisualStyleBackColor = true;
+            ezanZora.Click += buttonEzanZora_Click;
             // 
             // ezanIzlazak
             // 
-            resources.ApplyResources(this.ezanIzlazak, "ezanIzlazak");
-            this.ezanIzlazak.Name = "ezanIzlazak";
-            this.ezanIzlazak.UseVisualStyleBackColor = true;
-            this.ezanIzlazak.Click += new System.EventHandler(this.buttonEzanZora_Click);
+            resources.ApplyResources(ezanIzlazak, "ezanIzlazak");
+            ezanIzlazak.Name = "ezanIzlazak";
+            ezanIzlazak.UseVisualStyleBackColor = true;
+            ezanIzlazak.Click += buttonEzanZora_Click;
             // 
             // ezanPodne
             // 
-            resources.ApplyResources(this.ezanPodne, "ezanPodne");
-            this.ezanPodne.Name = "ezanPodne";
-            this.ezanPodne.UseVisualStyleBackColor = true;
-            this.ezanPodne.Click += new System.EventHandler(this.buttonEzanZora_Click);
+            resources.ApplyResources(ezanPodne, "ezanPodne");
+            ezanPodne.Name = "ezanPodne";
+            ezanPodne.UseVisualStyleBackColor = true;
+            ezanPodne.Click += buttonEzanZora_Click;
             // 
             // ezanIkindija
             // 
-            resources.ApplyResources(this.ezanIkindija, "ezanIkindija");
-            this.ezanIkindija.Name = "ezanIkindija";
-            this.ezanIkindija.UseVisualStyleBackColor = true;
-            this.ezanIkindija.Click += new System.EventHandler(this.buttonEzanZora_Click);
+            resources.ApplyResources(ezanIkindija, "ezanIkindija");
+            ezanIkindija.Name = "ezanIkindija";
+            ezanIkindija.UseVisualStyleBackColor = true;
+            ezanIkindija.Click += buttonEzanZora_Click;
             // 
             // ezanAksam
             // 
-            resources.ApplyResources(this.ezanAksam, "ezanAksam");
-            this.ezanAksam.Name = "ezanAksam";
-            this.ezanAksam.UseVisualStyleBackColor = true;
-            this.ezanAksam.Click += new System.EventHandler(this.buttonEzanZora_Click);
+            resources.ApplyResources(ezanAksam, "ezanAksam");
+            ezanAksam.Name = "ezanAksam";
+            ezanAksam.UseVisualStyleBackColor = true;
+            ezanAksam.Click += buttonEzanZora_Click;
             // 
             // ezanJacija
             // 
-            resources.ApplyResources(this.ezanJacija, "ezanJacija");
-            this.ezanJacija.Name = "ezanJacija";
-            this.ezanJacija.UseVisualStyleBackColor = true;
-            this.ezanJacija.Click += new System.EventHandler(this.buttonEzanZora_Click);
+            resources.ApplyResources(ezanJacija, "ezanJacija");
+            ezanJacija.Name = "ezanJacija";
+            ezanJacija.UseVisualStyleBackColor = true;
+            ezanJacija.Click += buttonEzanZora_Click;
             // 
             // openFileDialogMp3
             // 
@@ -325,16 +307,16 @@
             // 
             // button2
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            resources.ApplyResources(button2, "button2");
+            button2.Name = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // TesterPojacivac
             // 
-            resources.ApplyResources(this.TesterPojacivac, "TesterPojacivac");
-            this.TesterPojacivac.Name = "TesterPojacivac";
-            this.TesterPojacivac.VolumeChanged += new System.EventHandler(this.TesterPojacivac_VolumeChanged);
+            resources.ApplyResources(TesterPojacivac, "TesterPojacivac");
+            TesterPojacivac.Name = "TesterPojacivac";
+            TesterPojacivac.VolumeChanged += TesterPojacivac_VolumeChanged;
             // 
             // groupBoxTester
             // 
@@ -350,20 +332,20 @@
             // 
             // label15
             // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.Name = "label15";
+            resources.ApplyResources(label15, "label15");
+            label15.Name = "label15";
             // 
             // label14
             // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.Name = "label14";
+            resources.ApplyResources(label14, "label14");
+            label14.Name = "label14";
             // 
             // button3
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            resources.ApplyResources(button3, "button3");
+            button3.Name = "button3";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // comboBoxTest
             // 
@@ -397,109 +379,116 @@
             // 
             // labelLastEvent
             // 
-            resources.ApplyResources(this.labelLastEvent, "labelLastEvent");
-            this.labelLastEvent.Name = "labelLastEvent";
+            resources.ApplyResources(labelLastEvent, "labelLastEvent");
+            labelLastEvent.Name = "labelLastEvent";
             // 
             // checkBoxMujezin
             // 
-            resources.ApplyResources(this.checkBoxMujezin, "checkBoxMujezin");
-            this.checkBoxMujezin.Checked = true;
-            this.checkBoxMujezin.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxMujezin.Name = "checkBoxMujezin";
-            this.checkBoxMujezin.UseVisualStyleBackColor = true;
-            this.checkBoxMujezin.CheckedChanged += new System.EventHandler(this.checkBoxMujezin_CheckedChanged);
+            resources.ApplyResources(checkBoxMujezin, "checkBoxMujezin");
+            checkBoxMujezin.Checked = true;
+            checkBoxMujezin.CheckState = System.Windows.Forms.CheckState.Checked;
+            checkBoxMujezin.Name = "checkBoxMujezin";
+            checkBoxMujezin.UseVisualStyleBackColor = true;
+            checkBoxMujezin.CheckedChanged += checkBoxMujezin_CheckedChanged;
             // 
             // label13
             // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.Name = "label13";
+            resources.ApplyResources(label13, "label13");
+            label13.Name = "label13";
             // 
             // textBoxDoNamaza
             // 
-            resources.ApplyResources(this.textBoxDoNamaza, "textBoxDoNamaza");
-            this.textBoxDoNamaza.Name = "textBoxDoNamaza";
-            this.textBoxDoNamaza.ReadOnly = true;
+            resources.ApplyResources(textBoxDoNamaza, "textBoxDoNamaza");
+            textBoxDoNamaza.Name = "textBoxDoNamaza";
+            textBoxDoNamaza.ReadOnly = true;
             // 
             // label12
             // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
+            resources.ApplyResources(label12, "label12");
+            label12.Name = "label12";
             // 
             // textBoxSlijedeciNamaz
             // 
-            resources.ApplyResources(this.textBoxSlijedeciNamaz, "textBoxSlijedeciNamaz");
-            this.textBoxSlijedeciNamaz.Name = "textBoxSlijedeciNamaz";
-            this.textBoxSlijedeciNamaz.ReadOnly = true;
+            resources.ApplyResources(textBoxSlijedeciNamaz, "textBoxSlijedeciNamaz");
+            textBoxSlijedeciNamaz.Name = "textBoxSlijedeciNamaz";
+            textBoxSlijedeciNamaz.ReadOnly = true;
             // 
             // label11
             // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
+            resources.ApplyResources(label11, "label11");
+            label11.Name = "label11";
             // 
             // textBoxSlijedeciNamazLbl
             // 
-            resources.ApplyResources(this.textBoxSlijedeciNamazLbl, "textBoxSlijedeciNamazLbl");
-            this.textBoxSlijedeciNamazLbl.Name = "textBoxSlijedeciNamazLbl";
-            this.textBoxSlijedeciNamazLbl.ReadOnly = true;
+            resources.ApplyResources(textBoxSlijedeciNamazLbl, "textBoxSlijedeciNamazLbl");
+            textBoxSlijedeciNamazLbl.Name = "textBoxSlijedeciNamazLbl";
+            textBoxSlijedeciNamazLbl.ReadOnly = true;
             // 
             // label10
             // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
+            resources.ApplyResources(label10, "label10");
+            label10.Name = "label10";
             // 
             // textBoxSada
             // 
-            resources.ApplyResources(this.textBoxSada, "textBoxSada");
-            this.textBoxSada.Name = "textBoxSada";
-            this.textBoxSada.ReadOnly = true;
+            resources.ApplyResources(textBoxSada, "textBoxSada");
+            textBoxSada.Name = "textBoxSada";
+            textBoxSada.ReadOnly = true;
             // 
             // timerSada
             // 
-            this.timerSada.Interval = 5000;
-            this.timerSada.Tick += new System.EventHandler(this.timerSada_Tick);
+            timerSada.Interval = 5000;
+            timerSada.Tick += timerSada_Tick;
             // 
             // volumeSliderZora
             // 
-            resources.ApplyResources(this.volumeSliderZora, "volumeSliderZora");
-            this.volumeSliderZora.Name = "volumeSliderZora";
-            this.volumeSliderZora.VolumeChanged += new System.EventHandler(this.volumeSliderZora_VolumeChanged);
+            resources.ApplyResources(volumeSliderZora, "volumeSliderZora");
+            volumeSliderZora.Name = "volumeSliderZora";
+            volumeSliderZora.VolumeChanged += volumeSliderZora_VolumeChanged;
             // 
             // volumeSliderIzlazak
             // 
-            resources.ApplyResources(this.volumeSliderIzlazak, "volumeSliderIzlazak");
-            this.volumeSliderIzlazak.Name = "volumeSliderIzlazak";
-            this.volumeSliderIzlazak.VolumeChanged += new System.EventHandler(this.volumeSliderZora_VolumeChanged);
+            resources.ApplyResources(volumeSliderIzlazak, "volumeSliderIzlazak");
+            volumeSliderIzlazak.Name = "volumeSliderIzlazak";
+            volumeSliderIzlazak.VolumeChanged += volumeSliderZora_VolumeChanged;
             // 
             // volumeSliderPodne
             // 
-            resources.ApplyResources(this.volumeSliderPodne, "volumeSliderPodne");
-            this.volumeSliderPodne.Name = "volumeSliderPodne";
-            this.volumeSliderPodne.VolumeChanged += new System.EventHandler(this.volumeSliderZora_VolumeChanged);
+            resources.ApplyResources(volumeSliderPodne, "volumeSliderPodne");
+            volumeSliderPodne.Name = "volumeSliderPodne";
+            volumeSliderPodne.VolumeChanged += volumeSliderZora_VolumeChanged;
             // 
             // volumeSliderIkindija
             // 
-            resources.ApplyResources(this.volumeSliderIkindija, "volumeSliderIkindija");
-            this.volumeSliderIkindija.Name = "volumeSliderIkindija";
-            this.volumeSliderIkindija.VolumeChanged += new System.EventHandler(this.volumeSliderZora_VolumeChanged);
+            resources.ApplyResources(volumeSliderIkindija, "volumeSliderIkindija");
+            volumeSliderIkindija.Name = "volumeSliderIkindija";
+            volumeSliderIkindija.VolumeChanged += volumeSliderZora_VolumeChanged;
             // 
             // volumeSliderAksam
             // 
-            resources.ApplyResources(this.volumeSliderAksam, "volumeSliderAksam");
-            this.volumeSliderAksam.Name = "volumeSliderAksam";
-            this.volumeSliderAksam.VolumeChanged += new System.EventHandler(this.volumeSliderZora_VolumeChanged);
+            resources.ApplyResources(volumeSliderAksam, "volumeSliderAksam");
+            volumeSliderAksam.Name = "volumeSliderAksam";
+            volumeSliderAksam.VolumeChanged += volumeSliderZora_VolumeChanged;
             // 
             // volumeSliderJacija
             // 
-            resources.ApplyResources(this.volumeSliderJacija, "volumeSliderJacija");
-            this.volumeSliderJacija.Name = "volumeSliderJacija";
-            this.volumeSliderJacija.VolumeChanged += new System.EventHandler(this.volumeSliderZora_VolumeChanged);
+            resources.ApplyResources(volumeSliderJacija, "volumeSliderJacija");
+            volumeSliderJacija.Name = "volumeSliderJacija";
+            volumeSliderJacija.VolumeChanged += volumeSliderZora_VolumeChanged;
             // 
             // checkBoxPodne
             // 
-            resources.ApplyResources(this.checkBoxPodne, "checkBoxPodne");
-            this.checkBoxPodne.Name = "checkBoxPodne";
-            this.checkBoxPodne.UseVisualStyleBackColor = true;
-            this.checkBoxPodne.CheckedChanged += new System.EventHandler(this.checkBoxPodne_CheckedChanged);
+            resources.ApplyResources(checkBoxPodne, "checkBoxPodne");
+            checkBoxPodne.Name = "checkBoxPodne";
+            checkBoxPodne.UseVisualStyleBackColor = true;
+            checkBoxPodne.CheckedChanged += checkBoxPodne_CheckedChanged;
+            // 
+            // button4
+            // 
+            resources.ApplyResources(button4, "button4");
+            button4.Name = "button4";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click_1;
             // 
             // button4
             // 
