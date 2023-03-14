@@ -1,55 +1,193 @@
-﻿@inject AndroidMujezin.Servisi.ConfigServis _configServis
-@inject AndroidMujezin.Servisi.VaktijaApiServis _vaktijaApi
+﻿@page "/baza"
 
-@page "/baza"
-<h1>Baza podataka</h1>
-<div class="mb-3">
-    <label for="mestoSelect" class="form-label">Mjesto</label>
-<select id="mestoSelect" @bind="SelectedMjesto" class="form-select" aria-label="Odaberite mijesto">
-    @foreach (var mjesto in mjesta.Select(x=>x).OrderBy(x=>x)){
-        <option>@mjesto</option>
+@inject AndroidMujezin.Servisi.ConfigServis _configServis
+@inject AndroidMujezin.Servisi.VaktijaApiServis _vaktijaApi
+@inject AndroidMujezin.Servisi.BazaServis _bazaServis
+
+
+
+<h3>Konfiguracije baze podataka</h3>
+
+ @if(ErrorMsgMjesta != null)
+{
+        <span class="alert-warning">@ErrorMsgMjesta</span>
+}
+else 
+{
+<div class="container">
+   <div class="form row g-3">
+            <div class="row g-3">
+        <div class="col-12">
+            <div class="input-group">
+                <label class="input-group-text" for="NotifikujMinutaPrije">Mjesto:</label>
+                <select  disabled="@DisableForm" id="mestoSelect" @bind="OdabranoMjesto" name="mestoSelect" class="form-select" aria-label="Odaberite mijesto">
+                    @foreach (var mjesto in mjesta.Select(x => x))
+                        {
+                           <option value="@mjesto">@mjesto</option>
+                        }
+                </select>
+            </div>
+        </div>
+    </div>
+  
+    <div class="row  g-2">
+    <div class="col-12">
+    <div class="input-group">
+      <div class="input-group-text">Preuzmi bazu za slijdeći broj mjeseci: </div>
+                        <input type="number" class="form-control" id="MjeseciUnaprijed" disabled="@DisableForm" @bind="MjeseciUnaprijed" min="1" max="48" placeholder="Mjeseci">
+    </div>
+  </div>
+</div>
+        </div>
+<div class="row g-3">
+        
+<div class="col-6">
+                <button class="btn btn-primary w-60" type="button" disabled="@DisableForm" @onclick="PovuciBazu">Povuci bazu</button>
+</div>
+<div class="col-6">
+            @if (DisableForm)
+            {
+                    <button class="btn btn-secondary w-60" type="button" @onclick="PrekiniBazu">Prekini operaciju</button>
+            }
+            </div>
+            </div>
+    
+    
+    </div>
+    @foreach (var informacija in informacije)
+    {
+        if (informacija.Valid)
+        {
+            <div class="alert alert-info" role="alert">
+                @informacija.Msg
+            </div>
+        }
+        else
+
+        {
+            <div class="alert alert-danger" role="alert">
+               @informacija.Msg
+            </div>
+        }
     }
-</select>
-</div>
-<div >
-<label> Godina: </label>
-<input class="form-control" type="number" @bind="Godina" />
-</div>
-<button class="btn btn-primary" @onclick="PovuciBazu">Povuci bazu</button>
+}
 
 
 @code {
-    private Modeli.ConfigModel _configModel { get; set; }
+    private Modeli.MjestoModel _configModel { get; set; }
 
-    private int Godina { get; set; } 
+    private int MjeseciUnaprijed { get; set; } = 12;
 
-    private string SelectedMjesto { get;set; } 
-
-    private string baza { get; set; }
+    private string OdabranoMjesto { get; set; }
 
     private List<string> mjesta { get; set; } = new List<string>();
 
-    protected override  async Task OnInitializedAsync()
+    private string ErrorMsgMjesta { get; set; } = "Učitavam bazu podataka";
+
+
+
+
+    private CancellationTokenSource cancellationToken { get; set; }
+
+
+    public string MsgBazaOk { get; set; }
+
+    private bool DisableForm { get; set; }
+
+    private List<AndroidMujezin.Modeli.PocoMsg> informacije { get; set; } = new List<Modeli.PocoMsg>();
+
+    protected override void OnInitialized()
     {
-        mjesta =await _vaktijaApi.Mjesta();
-        _configModel = _configServis.getModel();
-        var rgod= _configModel.Rgod;
-        if (rgod == 0)
+
+        //porukaOBazi = _bazaServis.CheckBazu(DateTime.Now.Year);
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        _configModel = _configServis.GetMjestoModel();
+        OdabranoMjesto = _configModel.MjestoNaziv;
+        try
         {
-            _configModel.Rgod = DateTime.Now.Year;
-            Godina = DateTime.Now.Year;
+            mjesta = await _vaktijaApi.Mjesta();
+            ErrorMsgMjesta = null;
         }
-        else
+        catch(Exception ex)
         {
-            _configModel.Rgod = DateTime.Now.Year;
+            this.DisableForm = true;
+            this.ErrorMsgMjesta = $"Nisam dobio dostupna mjesta sa vaktija.ba servisa sa greškom: {ex.Message}";
         }
-        await Task.Delay(10);
+    }
+
+    private async void PovuciBazu()
+    {
+        cancellationToken = new CancellationTokenSource();
+        await PovuciBazuEngin(cancellationToken.Token);
+    }
+    private void PrekiniBazu()
+    {
+        //informacije.Add(new Modeli.PocoMsg() { Msg = "Korisnik prekinuo opreaciju", Valid = false });
+        cancellationToken.Cancel();
 
     }
-    private  void PovuciBazu()
+
+    private async Task PovuciBazuEngin(CancellationToken ct)
     {
-        _configModel.Mjesto = SelectedMjesto;
-        _configModel.Rgod = Godina;
-        _configServis.setModel(_configModel);
+        informacije.Clear();
+        try
+        {
+            int mjestoIx = this.mjesta.IndexOf(OdabranoMjesto);
+
+            this._configModel.MjestoIx = mjestoIx;
+            this._configModel.MjestoNaziv = OdabranoMjesto;
+            _configServis.SetMjestoModel(_configModel);
+            
+
+            if (string.IsNullOrEmpty(OdabranoMjesto))
+            {
+                informacije.Add(new Modeli.PocoMsg() { Valid = false, Msg = "Odaberite mjesto za koje vam treba baza" });
+                StateHasChanged();
+                return;
+            }
+            if (MjeseciUnaprijed < 0 || MjeseciUnaprijed > 48)
+            {
+                informacije.Add(new Modeli.PocoMsg() { Valid = false, Msg = "Broj mjeseci za preuzimanje baze može biti od 0 do 48 " });
+                StateHasChanged();
+                return;
+            }
+
+            informacije.Add(new Modeli.PocoMsg() { Valid = true, Msg = $"Preuzimam za {OdabranoMjesto} mejseci {MjeseciUnaprijed}" });
+            DisableForm = true;
+
+            StateHasChanged();
+            await Task.Delay(TimeSpan.FromSeconds(2), ct);
+
+            for (int i = 0; i < MjeseciUnaprijed; i++)
+            {
+                DateTime datum = DateTime.Now.AddMonths(i);
+                informacije.Add(new Modeli.PocoMsg() { Valid = true, Msg = $"Preuzimam {datum.Year}-{datum.Month}" });
+                StateHasChanged();
+                var mjesec = await _vaktijaApi.PovuciVaktijuZaMjesec(mjestoIx, datum.Year, datum.Month, ct);
+                _bazaServis.SpasiBazuMjesec(mjesec);
+                informacije.Add(new Modeli.PocoMsg() { Valid = true, Msg = $"Preuzeo {datum.Year}-{datum.Month}" });
+                StateHasChanged();
+            }
+            
+
+            informacije.Add(new Modeli.PocoMsg() { Valid = true, Msg = "Zavšili smo sa punjenjm " });
+
+        }
+        catch (OperationCanceledException ex)
+        {
+            informacije.Add(new Modeli.PocoMsg() { Valid = false, Msg = $"Preuzimanje baze prekinuo korisnik " });
+
+        }
+
+        catch(Exception ex)
+        {
+            informacije.Add(new Modeli.PocoMsg() { Valid = false, Msg = $"Greška kod preuzimanja baze ex:{ex.Message} " });
+
+        }
+        this.DisableForm = false;
+        StateHasChanged();
+
     }
 }

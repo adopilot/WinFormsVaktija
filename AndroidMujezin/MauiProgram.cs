@@ -41,6 +41,7 @@ namespace AndroidMujezin
             builder.Services.AddSingleton<WeatherForecastService>();
             //            builder.Services.AddSingleton<IFileSaver>();
             builder.Services.AddScoped<VaktijaApiServis>();
+            builder.Services.AddSingleton<BazaServis>();
             return builder.Build();
         }
     }

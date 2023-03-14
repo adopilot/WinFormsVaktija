@@ -1,4 +1,4 @@
-﻿@page "/"
+﻿@page "/Homer"
 
 @using Microsoft.Maui.Controls.PlatformConfiguration;
 @using Plugin.Maui.Audio;
@@ -8,6 +8,8 @@
 @inject IServicesTest Services_;
 @inject IMessage message_;
 @inject AndroidMujezin.Servisi.ConfigServis _configServis
+
+
 
 
 <h1>Hello, world!</h1>
@@ -40,8 +42,6 @@
     IServicesTest Services;
     private  IMessage message;
 
-    private Modeli.ConfigModel configModel { get => _configServis.getModel(); set => _configServis.setModel(value); }
-
     private List<string> tikTok = new List<string>();
 
     private DateTime ts  { get; set; }
@@ -64,7 +64,7 @@
         this.ts = DateTime.Now;
 
 
-        tikTok.Add(configModel.EzanAksam);
+        
     }
 
 
@@ -176,7 +176,6 @@
             if (result != null)
             {
                 this.Fajla = result.FullPath;
-                this.configModel.EzanAksam = result.FullPath;
                 this.PlayFromFileEnabled = true;
             }
             else
