@@ -90,6 +90,7 @@
             this.volumeSliderAksam = new NAudio.Gui.VolumeSlider();
             this.volumeSliderJacija = new NAudio.Gui.VolumeSlider();
             this.checkBoxPodne = new System.Windows.Forms.CheckBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericZora)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericIzlazak)).BeginInit();
             this.groupBoxTester.SuspendLayout();
@@ -117,7 +118,6 @@
             // openFileDialogExcel
             // 
             this.openFileDialogExcel.FileName = "openFileDialog1";
-            resources.ApplyResources(this.openFileDialogExcel, "openFileDialogExcel");
             // 
             // monthCalendar1
             // 
@@ -322,7 +322,6 @@
             // openFileDialogMp3
             // 
             this.openFileDialogMp3.FileName = "openFileDialogMp3";
-            resources.ApplyResources(this.openFileDialogMp3, "openFileDialogMp3");
             // 
             // button2
             // 
@@ -339,13 +338,13 @@
             // 
             // groupBoxTester
             // 
-            resources.ApplyResources(this.groupBoxTester, "groupBoxTester");
             this.groupBoxTester.Controls.Add(this.label15);
             this.groupBoxTester.Controls.Add(this.label14);
             this.groupBoxTester.Controls.Add(this.button3);
             this.groupBoxTester.Controls.Add(this.comboBoxTest);
             this.groupBoxTester.Controls.Add(this.button2);
             this.groupBoxTester.Controls.Add(this.TesterPojacivac);
+            resources.ApplyResources(this.groupBoxTester, "groupBoxTester");
             this.groupBoxTester.Name = "groupBoxTester";
             this.groupBoxTester.TabStop = false;
             // 
@@ -368,7 +367,6 @@
             // 
             // comboBoxTest
             // 
-            resources.ApplyResources(this.comboBoxTest, "comboBoxTest");
             this.comboBoxTest.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTest.FormattingEnabled = true;
             this.comboBoxTest.Items.AddRange(new object[] {
@@ -378,11 +376,11 @@
             resources.GetString("comboBoxTest.Items3"),
             resources.GetString("comboBoxTest.Items4"),
             resources.GetString("comboBoxTest.Items5")});
+            resources.ApplyResources(this.comboBoxTest, "comboBoxTest");
             this.comboBoxTest.Name = "comboBoxTest";
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.labelLastEvent);
             this.groupBox1.Controls.Add(this.checkBoxMujezin);
             this.groupBox1.Controls.Add(this.label13);
@@ -393,6 +391,7 @@
             this.groupBox1.Controls.Add(this.textBoxSlijedeciNamazLbl);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.textBoxSada);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -502,10 +501,18 @@
             this.checkBoxPodne.UseVisualStyleBackColor = true;
             this.checkBoxPodne.CheckedChanged += new System.EventHandler(this.checkBoxPodne_CheckedChanged);
             // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.checkBoxPodne);
             this.Controls.Add(this.volumeSliderJacija);
             this.Controls.Add(this.volumeSliderAksam);
@@ -621,6 +628,7 @@
         public System.Windows.Forms.Label label14;
         private System.Windows.Forms.CheckBox checkBoxPodne;
         public System.Windows.Forms.Label labelLastEvent;
+        private System.Windows.Forms.Button button4;
     }
 }
 
