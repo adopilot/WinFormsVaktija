@@ -1,6 +1,7 @@
 ﻿using AndroidMujezin.Modeli;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -10,21 +11,107 @@ namespace AndroidMujezin.Servisi
 {
     public class BazaServis
     {
-        JsonSerializerOptions _serializerOptions;
-        
-        
-        public BazaServis(VaktijaApiServis vaktijaApiServis)
+        private JsonSerializerOptions _serializerOptions;
+        private ConfigServis _configServis;
+
+
+        public BazaServis(VaktijaApiServis vaktijaApiServis, ConfigServis configServis)
         {
             _serializerOptions = new JsonSerializerOptions
             {
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
                 WriteIndented = true
             };
-        
+            _configServis = configServis;
         }
 
+        public async Task<AudioModel> SaveAudio(AudioModel model)
+        {
+            string targetFile = System.IO.Path.Combine(FileSystem.Current.AppDataDirectory, Path.GetFileName(model.Name));
 
-        public PocoMsg SpasiBazuMjesec(VaktijaZaMjesec model)
+
+            //using Stream fileStream = await FileSystem.Current.OpenAppPackageFileAsync(sourceFile);
+            using Stream fileStream =  File.OpenRead(model.FullPath);
+            using StreamReader reader = new StreamReader(fileStream);
+
+            string content = await reader.ReadToEndAsync();
+
+            // Transform file content to upper case text
+            content = content.ToUpperInvariant();
+
+            // Write the file content to the app data directory
+            
+
+            using FileStream outputStream = System.IO.File.OpenWrite(targetFile);
+            using StreamWriter streamWriter = new StreamWriter(outputStream);
+
+            await streamWriter.WriteAsync(content);
+
+
+
+            model.FullPath = targetFile;
+            return model;
+            
+        }
+        public List<AudioModel> AudioBaza()
+        {
+            List<AudioModel> baza = new List<AudioModel>();
+
+            FileSystem.OpenAppPackageFileAsync("amplePhone.mp3");
+
+            baza.Add( new AudioModel() {  EmbededResoce=true, FullPath= "HazimLepirEzan.mp3" , IsUsed=true, Name= "Hazim Lepir Ezan" });
+            baza.Add( new AudioModel() {  EmbededResoce=true,  FullPath= "HazimLepirEzan.mp3" , IsUsed=true, Name= "Hazim Lepir Sabahski Ezan" });
+
+            string[] fileEntries = Directory.GetFiles(FileSystem.AppDataDirectory, "*.mp3");
+            
+            foreach (string fileEntry in fileEntries)
+            {
+
+                var audioModel = new AudioModel() { EmbededResoce = false, FullPath = fileEntry, IsUsed = false, Name = Path.GetFileName(fileEntry) };
+                baza.Add( audioModel );
+
+            }
+
+            return baza;
+        }
+        
+        private bool IsUsedInFiles(string path)
+        {
+            var files = new List<string>();
+            var namazi = _configServis.GetNamazModel();
+            if (!string.IsNullOrEmpty(namazi.Zora.FajlaZaEzan))
+            {
+                files.Add(namazi.Zora.FajlaZaEzan);
+            }
+            if (!string.IsNullOrEmpty(namazi.IzlazakSunca.FajlaZaEzan))
+            {
+                files.Add(namazi.IzlazakSunca.FajlaZaEzan);
+            }
+            if (!string.IsNullOrEmpty(namazi.Podne.FajlaZaEzan))
+            {
+                files.Add(namazi.Podne.FajlaZaEzan);
+            }
+            if (!string.IsNullOrEmpty(namazi.Dzuma.FajlaZaEzan))
+            {
+                files.Add(namazi.Dzuma.FajlaZaEzan);
+            }
+            if (!string.IsNullOrEmpty(namazi.Ikindija.FajlaZaEzan))
+            {
+                files.Add(namazi.Ikindija.FajlaZaEzan);
+            }
+            if (!string.IsNullOrEmpty(namazi.Aksam.FajlaZaEzan))
+            {
+                files.Add(namazi.Aksam.FajlaZaEzan);
+            }
+            if (!string.IsNullOrEmpty(namazi.Jacija.FajlaZaEzan))
+            {
+                files.Add(namazi.Jacija.FajlaZaEzan);
+            }
+
+            return files.Any(x => x.ToLower() == path.ToLower());
+        }
+
+        public PocoMsg SpasiBazuMjesec(VaktijaZaMjesec model,CancellationToken cancellationToken)
         {
             var fileName = FileName(model.id,model.godina,model.mjesec);
             if (System.IO.File.Exists(fileName))

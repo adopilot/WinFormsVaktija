@@ -56,6 +56,8 @@
     <ItemGroup>
       <None Remove="azan1.mp3" />
       <None Remove="Resources\Raw\amplePhone.mp3" />
+      <None Remove="Resources\Raw\HazimLepirEzan.mp3" />
+      <None Remove="Resources\Raw\HazimLepirSabahskiEzan.mp3" />
     </ItemGroup>
 
     <ItemGroup>

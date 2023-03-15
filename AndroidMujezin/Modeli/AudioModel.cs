@@ -11,7 +11,6 @@ namespace AndroidMujezin.Modeli
     {
         public string Name { get; set; }
         public string FullPath { get; set; }
-        public int Duration { get; set; }
         public bool EmbededResoce { get; set; }
         public bool IsUsed { get; set; }
     }
