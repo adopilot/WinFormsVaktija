@@ -30,72 +30,72 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            label1 = new System.Windows.Forms.Label();
-            textBoxExcelFajla = new System.Windows.Forms.TextBox();
-            button1 = new System.Windows.Forms.Button();
-            openFileDialogExcel = new System.Windows.Forms.OpenFileDialog();
-            monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            label2 = new System.Windows.Forms.Label();
-            label3 = new System.Windows.Forms.Label();
-            label4 = new System.Windows.Forms.Label();
-            label5 = new System.Windows.Forms.Label();
-            label6 = new System.Windows.Forms.Label();
-            label7 = new System.Windows.Forms.Label();
-            textBoxZora = new System.Windows.Forms.TextBox();
-            textBoxIzlazak = new System.Windows.Forms.TextBox();
-            textBoxPodne = new System.Windows.Forms.TextBox();
-            textBoxIkindija = new System.Windows.Forms.TextBox();
-            textBoxAksam = new System.Windows.Forms.TextBox();
-            textBoxJacija = new System.Windows.Forms.TextBox();
-            ezaniZora = new System.Windows.Forms.CheckBox();
-            ezaniIzlazak = new System.Windows.Forms.CheckBox();
-            ezaniPodne = new System.Windows.Forms.CheckBox();
-            ezaniIkindija = new System.Windows.Forms.CheckBox();
-            ezaniAksam = new System.Windows.Forms.CheckBox();
-            ezaniJacija = new System.Windows.Forms.CheckBox();
-            numericZora = new System.Windows.Forms.NumericUpDown();
-            numericIzlazak = new System.Windows.Forms.NumericUpDown();
-            label8 = new System.Windows.Forms.Label();
-            label9 = new System.Windows.Forms.Label();
-            ezanZora = new System.Windows.Forms.Button();
-            ezanIzlazak = new System.Windows.Forms.Button();
-            ezanPodne = new System.Windows.Forms.Button();
-            ezanIkindija = new System.Windows.Forms.Button();
-            ezanAksam = new System.Windows.Forms.Button();
-            ezanJacija = new System.Windows.Forms.Button();
-            openFileDialogMp3 = new System.Windows.Forms.OpenFileDialog();
-            button2 = new System.Windows.Forms.Button();
-            TesterPojacivac = new NAudio.Gui.VolumeSlider();
-            groupBoxTester = new System.Windows.Forms.GroupBox();
-            label15 = new System.Windows.Forms.Label();
-            label14 = new System.Windows.Forms.Label();
-            button3 = new System.Windows.Forms.Button();
-            comboBoxTest = new System.Windows.Forms.ComboBox();
-            groupBox1 = new System.Windows.Forms.GroupBox();
-            labelLastEvent = new System.Windows.Forms.Label();
-            checkBoxMujezin = new System.Windows.Forms.CheckBox();
-            label13 = new System.Windows.Forms.Label();
-            textBoxDoNamaza = new System.Windows.Forms.TextBox();
-            label12 = new System.Windows.Forms.Label();
-            textBoxSlijedeciNamaz = new System.Windows.Forms.TextBox();
-            label11 = new System.Windows.Forms.Label();
-            textBoxSlijedeciNamazLbl = new System.Windows.Forms.TextBox();
-            label10 = new System.Windows.Forms.Label();
-            textBoxSada = new System.Windows.Forms.TextBox();
-            timerSada = new System.Windows.Forms.Timer(components);
-            volumeSliderZora = new NAudio.Gui.VolumeSlider();
-            volumeSliderIzlazak = new NAudio.Gui.VolumeSlider();
-            volumeSliderPodne = new NAudio.Gui.VolumeSlider();
-            volumeSliderIkindija = new NAudio.Gui.VolumeSlider();
-            volumeSliderAksam = new NAudio.Gui.VolumeSlider();
-            volumeSliderJacija = new NAudio.Gui.VolumeSlider();
-            checkBoxPodne = new System.Windows.Forms.CheckBox();
-            button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)numericZora).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericIzlazak).BeginInit();
-            groupBoxTester.SuspendLayout();
-            groupBox1.SuspendLayout();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxExcelFajla = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.openFileDialogExcel = new System.Windows.Forms.OpenFileDialog();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxZora = new System.Windows.Forms.TextBox();
+            this.textBoxIzlazak = new System.Windows.Forms.TextBox();
+            this.textBoxPodne = new System.Windows.Forms.TextBox();
+            this.textBoxIkindija = new System.Windows.Forms.TextBox();
+            this.textBoxAksam = new System.Windows.Forms.TextBox();
+            this.textBoxJacija = new System.Windows.Forms.TextBox();
+            this.ezaniZora = new System.Windows.Forms.CheckBox();
+            this.ezaniIzlazak = new System.Windows.Forms.CheckBox();
+            this.ezaniPodne = new System.Windows.Forms.CheckBox();
+            this.ezaniIkindija = new System.Windows.Forms.CheckBox();
+            this.ezaniAksam = new System.Windows.Forms.CheckBox();
+            this.ezaniJacija = new System.Windows.Forms.CheckBox();
+            this.numericZora = new System.Windows.Forms.NumericUpDown();
+            this.numericIzlazak = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.ezanZora = new System.Windows.Forms.Button();
+            this.ezanIzlazak = new System.Windows.Forms.Button();
+            this.ezanPodne = new System.Windows.Forms.Button();
+            this.ezanIkindija = new System.Windows.Forms.Button();
+            this.ezanAksam = new System.Windows.Forms.Button();
+            this.ezanJacija = new System.Windows.Forms.Button();
+            this.openFileDialogMp3 = new System.Windows.Forms.OpenFileDialog();
+            this.button2 = new System.Windows.Forms.Button();
+            this.TesterPojacivac = new NAudio.Gui.VolumeSlider();
+            this.groupBoxTester = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.comboBoxTest = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelLastEvent = new System.Windows.Forms.Label();
+            this.checkBoxMujezin = new System.Windows.Forms.CheckBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxDoNamaza = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBoxSlijedeciNamaz = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBoxSlijedeciNamazLbl = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxSada = new System.Windows.Forms.TextBox();
+            this.timerSada = new System.Windows.Forms.Timer(this.components);
+            this.volumeSliderZora = new NAudio.Gui.VolumeSlider();
+            this.volumeSliderIzlazak = new NAudio.Gui.VolumeSlider();
+            this.volumeSliderPodne = new NAudio.Gui.VolumeSlider();
+            this.volumeSliderIkindija = new NAudio.Gui.VolumeSlider();
+            this.volumeSliderAksam = new NAudio.Gui.VolumeSlider();
+            this.volumeSliderJacija = new NAudio.Gui.VolumeSlider();
+            this.checkBoxPodne = new System.Windows.Forms.CheckBox();
+            this.button4 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.numericZora)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericIzlazak)).BeginInit();
+            this.groupBoxTester.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // label1
             // 
@@ -117,8 +117,7 @@
             // 
             // openFileDialogExcel
             // 
-            openFileDialogExcel.FileName = "openFileDialog1";
-            resources.ApplyResources(openFileDialogExcel, "openFileDialogExcel");
+            this.openFileDialogExcel.FileName = "openFileDialog1";
             // 
             // monthCalendar1
             // 
@@ -304,8 +303,7 @@
             // 
             // openFileDialogMp3
             // 
-            openFileDialogMp3.FileName = "openFileDialogMp3";
-            resources.ApplyResources(openFileDialogMp3, "openFileDialogMp3");
+            this.openFileDialogMp3.FileName = "openFileDialogMp3";
             // 
             // button2
             // 
@@ -322,15 +320,15 @@
             // 
             // groupBoxTester
             // 
-            resources.ApplyResources(groupBoxTester, "groupBoxTester");
-            groupBoxTester.Controls.Add(label15);
-            groupBoxTester.Controls.Add(label14);
-            groupBoxTester.Controls.Add(button3);
-            groupBoxTester.Controls.Add(comboBoxTest);
-            groupBoxTester.Controls.Add(button2);
-            groupBoxTester.Controls.Add(TesterPojacivac);
-            groupBoxTester.Name = "groupBoxTester";
-            groupBoxTester.TabStop = false;
+            this.groupBoxTester.Controls.Add(this.label15);
+            this.groupBoxTester.Controls.Add(this.label14);
+            this.groupBoxTester.Controls.Add(this.button3);
+            this.groupBoxTester.Controls.Add(this.comboBoxTest);
+            this.groupBoxTester.Controls.Add(this.button2);
+            this.groupBoxTester.Controls.Add(this.TesterPojacivac);
+            resources.ApplyResources(this.groupBoxTester, "groupBoxTester");
+            this.groupBoxTester.Name = "groupBoxTester";
+            this.groupBoxTester.TabStop = false;
             // 
             // label15
             // 
@@ -351,27 +349,33 @@
             // 
             // comboBoxTest
             // 
-            resources.ApplyResources(comboBoxTest, "comboBoxTest");
-            comboBoxTest.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            comboBoxTest.FormattingEnabled = true;
-            comboBoxTest.Items.AddRange(new object[] { resources.GetString("comboBoxTest.Items"), resources.GetString("comboBoxTest.Items1"), resources.GetString("comboBoxTest.Items2"), resources.GetString("comboBoxTest.Items3"), resources.GetString("comboBoxTest.Items4"), resources.GetString("comboBoxTest.Items5") });
-            comboBoxTest.Name = "comboBoxTest";
+            this.comboBoxTest.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTest.FormattingEnabled = true;
+            this.comboBoxTest.Items.AddRange(new object[] {
+            resources.GetString("comboBoxTest.Items"),
+            resources.GetString("comboBoxTest.Items1"),
+            resources.GetString("comboBoxTest.Items2"),
+            resources.GetString("comboBoxTest.Items3"),
+            resources.GetString("comboBoxTest.Items4"),
+            resources.GetString("comboBoxTest.Items5")});
+            resources.ApplyResources(this.comboBoxTest, "comboBoxTest");
+            this.comboBoxTest.Name = "comboBoxTest";
             // 
             // groupBox1
             // 
-            resources.ApplyResources(groupBox1, "groupBox1");
-            groupBox1.Controls.Add(labelLastEvent);
-            groupBox1.Controls.Add(checkBoxMujezin);
-            groupBox1.Controls.Add(label13);
-            groupBox1.Controls.Add(textBoxDoNamaza);
-            groupBox1.Controls.Add(label12);
-            groupBox1.Controls.Add(textBoxSlijedeciNamaz);
-            groupBox1.Controls.Add(label11);
-            groupBox1.Controls.Add(textBoxSlijedeciNamazLbl);
-            groupBox1.Controls.Add(label10);
-            groupBox1.Controls.Add(textBoxSada);
-            groupBox1.Name = "groupBox1";
-            groupBox1.TabStop = false;
+            this.groupBox1.Controls.Add(this.labelLastEvent);
+            this.groupBox1.Controls.Add(this.checkBoxMujezin);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.textBoxDoNamaza);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.textBoxSlijedeciNamaz);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.textBoxSlijedeciNamazLbl);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.textBoxSada);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
             // 
             // labelLastEvent
             // 
@@ -486,61 +490,69 @@
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click_1;
             // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            Controls.Add(button4);
-            Controls.Add(checkBoxPodne);
-            Controls.Add(volumeSliderJacija);
-            Controls.Add(volumeSliderAksam);
-            Controls.Add(volumeSliderIkindija);
-            Controls.Add(volumeSliderPodne);
-            Controls.Add(volumeSliderIzlazak);
-            Controls.Add(volumeSliderZora);
-            Controls.Add(groupBox1);
-            Controls.Add(groupBoxTester);
-            Controls.Add(ezanJacija);
-            Controls.Add(ezanAksam);
-            Controls.Add(ezanIkindija);
-            Controls.Add(ezanPodne);
-            Controls.Add(ezanIzlazak);
-            Controls.Add(ezanZora);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(numericIzlazak);
-            Controls.Add(numericZora);
-            Controls.Add(ezaniJacija);
-            Controls.Add(ezaniAksam);
-            Controls.Add(ezaniIkindija);
-            Controls.Add(ezaniPodne);
-            Controls.Add(ezaniIzlazak);
-            Controls.Add(ezaniZora);
-            Controls.Add(textBoxJacija);
-            Controls.Add(textBoxAksam);
-            Controls.Add(textBoxIkindija);
-            Controls.Add(textBoxPodne);
-            Controls.Add(textBoxIzlazak);
-            Controls.Add(textBoxZora);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(monthCalendar1);
-            Controls.Add(button1);
-            Controls.Add(textBoxExcelFajla);
-            Controls.Add(label1);
-            Name = "Form1";
-            ((System.ComponentModel.ISupportInitialize)numericZora).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericIzlazak).EndInit();
-            groupBoxTester.ResumeLayout(false);
-            groupBoxTester.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.checkBoxPodne);
+            this.Controls.Add(this.volumeSliderJacija);
+            this.Controls.Add(this.volumeSliderAksam);
+            this.Controls.Add(this.volumeSliderIkindija);
+            this.Controls.Add(this.volumeSliderPodne);
+            this.Controls.Add(this.volumeSliderIzlazak);
+            this.Controls.Add(this.volumeSliderZora);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBoxTester);
+            this.Controls.Add(this.ezanJacija);
+            this.Controls.Add(this.ezanAksam);
+            this.Controls.Add(this.ezanIkindija);
+            this.Controls.Add(this.ezanPodne);
+            this.Controls.Add(this.ezanIzlazak);
+            this.Controls.Add(this.ezanZora);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.numericIzlazak);
+            this.Controls.Add(this.numericZora);
+            this.Controls.Add(this.ezaniJacija);
+            this.Controls.Add(this.ezaniAksam);
+            this.Controls.Add(this.ezaniIkindija);
+            this.Controls.Add(this.ezaniPodne);
+            this.Controls.Add(this.ezaniIzlazak);
+            this.Controls.Add(this.ezaniZora);
+            this.Controls.Add(this.textBoxJacija);
+            this.Controls.Add(this.textBoxAksam);
+            this.Controls.Add(this.textBoxIkindija);
+            this.Controls.Add(this.textBoxPodne);
+            this.Controls.Add(this.textBoxIzlazak);
+            this.Controls.Add(this.textBoxZora);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBoxExcelFajla);
+            this.Controls.Add(this.label1);
+            this.Name = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.numericZora)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericIzlazak)).EndInit();
+            this.groupBoxTester.ResumeLayout(false);
+            this.groupBoxTester.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

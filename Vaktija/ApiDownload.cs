@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Net.Http;
@@ -20,6 +22,7 @@ namespace Vaktija
         public string Path { get; set; }
         private string[] lokacije;
         private int lokacija = -1;
+
         public ApiDownload()
         {
             InitializeComponent();
@@ -29,13 +32,23 @@ namespace Vaktija
             this.godinaNumeric.Value = DateTime.Today.Year;
         }
 
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            var ado = await SpasiDatoteku();
+            if (ado)
+            {
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+        }
         private async void ApiDownload_Load(object sender, EventArgs e)
         {
             await UcitajLokacije();
         }
         private async Task UcitajLokacije()
         {
-            using HttpClient client = new();
+            using (HttpClient client = new HttpClient())
+            {
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
@@ -48,6 +61,7 @@ namespace Vaktija
             lokacije = JsonConvert.DeserializeObject<string[]>(json);
 
             this.comboBox1.Items.AddRange(lokacije);
+            }
 
 
 
@@ -70,7 +84,8 @@ namespace Vaktija
             }
 
 
-            using HttpClient client = new();
+            using (HttpClient client = new HttpClient())
+            {
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
@@ -79,7 +94,7 @@ namespace Vaktija
 
             var json = await client.GetStringAsync($"https://api.vaktija.ba/vaktija/v1/{ix}/{this.godinaNumeric.Value}");
 
-            VaktijaModel model =  JsonConvert.DeserializeObject<VaktijaModel>(json);
+                VaktijaModel model = JsonConvert.DeserializeObject<VaktijaModel>(json);
 
             if (model == null)
             {
@@ -87,7 +102,7 @@ namespace Vaktija
                 return false;
             }
 
-           this.Path  = System.IO.Path.Combine(Environment.CurrentDirectory, $"vakts_{ix}_{this.godinaNumeric.Value}.txt");
+                this.Path = System.IO.Path.Combine(Environment.CurrentDirectory, $"vakts_{ix}_{this.godinaNumeric.Value}.txt");
 
             if (File.Exists(this.Path))
             {
@@ -95,13 +110,13 @@ namespace Vaktija
                 {
                     File.Delete(Path);
                 }
-                catch( Exception ex )
+                    catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message,"Nisam uspijeo pregaziti datotkeu");
+                        MessageBox.Show(ex.Message, "Nisam uspijeo pregaziti datotkeu");
                     return false;
                 }
             }
-            await File.WriteAllTextAsync(this.Path, json );
+                File.WriteAllText(this.Path, json);
 
             return true;
 

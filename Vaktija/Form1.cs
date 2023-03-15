@@ -666,5 +666,23 @@ namespace Vaktija
 
             }
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            ApiDownload apiDownload = new ApiDownload();
+            var dialogResult = apiDownload.ShowDialog();
+            if (dialogResult == DialogResult.OK)
+            {
+
+
+                Properties.Settings.Default.txtFajla = apiDownload.Path;
+                this.textBoxExcelFajla.Text = apiDownload.Path;
+                Properties.Settings.Default.Save();
+                Properties.Settings.Default.Reload();
+                refresh();
+
+            }
+
+        }
     }
 }

@@ -23,7 +23,14 @@ namespace Vaktija.Models
         public int godina { get; set; }
         public List<Mjesec> mjesec { get; set; }
     }
+    public class VaktijaModel
+    {
+        public int id { get; set; }
+        public string lokacija { get; set; }
+        public int godina { get; set; }
+        public List<Mjesec> mjesec { get; set; }
+    }
 
-    
+
 
 }
