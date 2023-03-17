@@ -35,7 +35,7 @@ namespace AndroidMujezin
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
-
+            builder.Services.AddSingleton<Servisi.VakatServis>();
             builder.Services.AddSingleton(AudioManager.Current);
             builder.Services.AddSingleton<Servisi.ConfigServis>();
             builder.Services.AddSingleton<WeatherForecastService>();

@@ -32,6 +32,8 @@ namespace AndroidMujezin.Modeli
         public string FajlaZaEzan { get; set; }
         public DateTime Satnica { get; set; }
 
+        
+
     }
     public enum NamazEnum
     {
