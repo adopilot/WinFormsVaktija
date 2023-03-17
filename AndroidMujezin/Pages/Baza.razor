@@ -166,12 +166,11 @@ else
                 informacije.Add(new Modeli.PocoMsg() { Valid = true, Msg = $"Preuzimam {datum.Year}-{datum.Month}" });
                 StateHasChanged();
                 var mjesec = await _vaktijaApi.PovuciVaktijuZaMjesec(mjestoIx, datum.Year, datum.Month, ct);
-                _bazaServis.SpasiBazuMjesec(mjesec);
+                _bazaServis.SpasiBazuMjesec(mjesec,ct);
                 informacije.Add(new Modeli.PocoMsg() { Valid = true, Msg = $"Preuzeo {datum.Year}-{datum.Month}" });
                 StateHasChanged();
             }
             
-
             informacije.Add(new Modeli.PocoMsg() { Valid = true, Msg = "Zavšili smo sa punjenjm " });
 
         }

@@ -2,22 +2,34 @@
 @using AndroidMujezin.Modeli;
 
 <h3>Postavke za ezane</h3>
-<hr />
 <div class="container-fluid">
+<ul>
+    <li><AnchorLink href="#zora">Zora</AnchorLink></li>
+    <li><AnchorLink href="#izlazakSunca">Izlazak sunca</AnchorLink></li>
+    <li><AnchorLink href="#podne">Podne </AnchorLink></li>
+    <li><AnchorLink href="#dzuma">Džuma</AnchorLink></li>
+    <li><AnchorLink href="#ikindja">Ikindija</AnchorLink></li>
+    <li><AnchorLink href="#aksam">Akšam</AnchorLink></li>
+    <li><AnchorLink href="#jacija">Jacija</AnchorLink></li>
+</ul>
+<hr />
+
+    <div id="zora">
     <div class="row">
+        <h3 >Zora Sabah</h3>
         <div class="col-6">
         <div class="form-check">
-            <label class="form-check-label" for="Ezani">
-                <span class="lead">Ezan za zoru (sabah)</span>
+            <label class="form-check-label">
+                <span class="lead">Ezani</span>
             </label>
-            <input class="form-check-input" type="checkbox" @bind="Model.Ezani" id="Ezani">
+                <input class="form-check-input" type="checkbox" @bind="zora.Ezani">
             
         </div>
     </div>
         <div class="col-6">
     <div class="input-group">
       <div class="input-group-text">Korekcija minuta: </div>
-                <input type="number" class="form-control" id="KorekcijaMinta" @bind="Model.KorekcijaMinta" min="0" max="100" placeholder="Korekcija minuta">
+                <input type="number" class="form-control"  @bind="zora.KorekcijaMinta" min="0" max="100" placeholder="Korekcija minuta">
     </div>
   </div>
 </div>
@@ -25,16 +37,16 @@
 
         <div class="col-6">
         <div class="form-check">
-            <label class="form-check-label" for="Notifikuj">
-                <span class="lead">Obavjesti me za zoru</span>
+            <label class="form-check-label">
+                <span class="lead">Obavjesti me</span>
             </label>
-            <input class="form-check-input" type="checkbox" @bind="Model.Notifikuj" id="Notifikuj">
+                <input class="form-check-input" type="checkbox" @bind="zora.Notifikuj">
         </div>
     </div>
         <div class="col-6">
         <div class="input-group">
                 <div class="input-group-text">Korekcija minuta: </div>
-            <input type="number" class="form-control" id="NotifikujMinutaPrije" @bind="Model.NotifikujMinutaPrije" min="0" max="100" placeholder="Korekcija minuta">
+                    <input type="number" class="form-control" @bind="zora.NotifikujMinutaPrije" min="0" max="100" placeholder="Korekcija minuta">
         </div>
     </div>
     
@@ -42,7 +54,7 @@
 <div class="row ">
         <div class="col-12">
     <div class="input-group">
-        <label class="input-group-text" for="NotifikujMinutaPrije">Audio zean:</label>
+        <label class="input-group-text" >Audio fajla:</label>
         <select class="form-select" aria-label="Default select example">
             <option selected>Open this select menu</option>
             <option value="1">One</option>
@@ -52,28 +64,28 @@
     </div>
     </div>
 </div>
-<hr />
 <div class="row">
-        <label for="Volume" class="form-label">Jačina zvuka ezana (volume: @Model.Volume %)</label>
-        <input type="range" class="form-range" id="Volume" @bind="Model.Volume">
+        <label class="form-label">Jačina zvuka ezana (volume: @zora.Volume %)</label>
+        <input type="range" class="form-range" @bind="zora.Volume">
     </div>
-<hr />
+    </div>
     <hr />
-    <div class="container-fluid">
+    <div id="izlazakSunca">
+        <h3>Izazak sunca</h3>
         <div class="row">
             <div class="col-6">
                 <div class="form-check">
-                    <label class="form-check-label" for="Ezani">
-                        <span class="lead">Ezan za zoru (sabah)</span>
+                    <label class="form-check-label">
+                        <span class="lead">Ezani</span>
                     </label>
-                    <input class="form-check-input" type="checkbox" @bind="Model.Ezani" id="Ezani">
+                    <input class="form-check-input" type="checkbox" @bind="izlazak.Ezani">
 
                 </div>
             </div>
             <div class="col-6">
                 <div class="input-group">
                     <div class="input-group-text">Korekcija minuta: </div>
-                    <input type="number" class="form-control" id="KorekcijaMinta" @bind="Model.KorekcijaMinta" min="0" max="100" placeholder="Korekcija minuta">
+                    <input type="number" class="form-control"  @bind="izlazak.KorekcijaMinta" min="0" max="100" placeholder="Korekcija minuta">
                 </div>
             </div>
         </div>
@@ -81,16 +93,16 @@
 
             <div class="col-6">
                 <div class="form-check">
-                    <label class="form-check-label" for="Notifikuj">
-                        <span class="lead">Obavjesti me za zoru</span>
+                    <label class="form-check-label" >
+                        <span class="lead">Obavjesti me</span>
                     </label>
-                    <input class="form-check-input" type="checkbox" @bind="Model.Notifikuj" id="Notifikuj">
+                    <input class="form-check-input" type="checkbox" @bind="izlazak.Notifikuj" >
                 </div>
             </div>
             <div class="col-6">
                 <div class="input-group">
                     <div class="input-group-text">Korekcija minuta: </div>
-                    <input type="number" class="form-control" id="NotifikujMinutaPrije" @bind="Model.NotifikujMinutaPrije" min="0" max="100" placeholder="Korekcija minuta">
+                    <input type="number" class="form-control"  @bind="izlazak.NotifikujMinutaPrije" min="0" max="100" placeholder="Korekcija minuta">
                 </div>
             </div>
 
@@ -98,8 +110,8 @@
         <div class="row ">
             <div class="col-12">
                 <div class="input-group">
-                    <label class="input-group-text" for="NotifikujMinutaPrije">Audio zean:</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <label class="input-group-text" >Audio fajla:</label>
+                    <select class="form-select" aria-label="Odaberite datoteku">
                         <option selected>Open this select menu</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -109,17 +121,30 @@
             </div>
         </div>
         <div class="row">
-            <label for="Volume" class="form-label">Jačina zvuka ezana (volume: @Model.Volume %)</label>
-            <input type="range" class="form-range" id="Volume" @bind="Model.Volume">
+            <label  class="form-label">Jačina zvuka ezana (volume: @izlazak.Volume %)</label>
+            <input type="range" class="form-range"  @bind="izlazak.Volume">
         </div>
 
         <hr />
     </div>
     <hr />
+    <button type="button" class="btn btn-primary" @onclick="spasi">Spasi</button>
 </div>
 
 
 @code {
-    public NamazModel Model { get; set; } = new NamazModel(){Ezani=true , Volume=40 , NotifikujMinutaPrije=15};
+    public NamazModel zora = new NamazModel() { Namaz = NamazEnum.Zora };
+    public NamazModel izlazak = new NamazModel() { Namaz = NamazEnum.IzlazakSunca };
+    public NamazModel podne = new NamazModel() { Namaz = NamazEnum.Podne };
+    public NamazModel dzuma = new NamazModel() { Namaz = NamazEnum.Dzuma };
+    public NamazModel ikindija = new NamazModel() { Namaz = NamazEnum.Ikindija };
+    public NamazModel aksam = new NamazModel() { Namaz = NamazEnum.Aksam };
+    public NamazModel jacija = new NamazModel() { Namaz = NamazEnum.Jacija };
+
+    private void spasi()
+    {
+        Console.WriteLine("zora", zora);
+        Console.WriteLine("izlazak", izlazak);
+    }
 }
    

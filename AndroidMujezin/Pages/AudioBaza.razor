@@ -1,12 +1,123 @@
 ﻿@inject AndroidMujezin.Servisi.ConfigServis _configServis
 @inject AndroidMujezin.Servisi.VaktijaApiServis _vaktijaApi
 @inject AndroidMujezin.Servisi.BazaServis _bazaServis
+@inject IAudioManager _audioManager;
 @page "/"
+@using AndroidMujezin.Modeli;
+@using Plugin.Maui.Audio;
 <h3>Baza audio snjimaka ezana</h3>
 
+@if (baza == null)
+{
+	<p><em>Učitavam podatke...</em></p>
+}
+else
+{
+	<div class="form">
+        <button type="button" class="btn btn-primary" @onclick="OdaberiFajlu">Učitaj daoteku</button><br>
+        @if(audioPlayer != null && audioPlayer.IsPlaying)
+        {
+            <button type="button" class="btn btn-primary" @onclick="PrekiniSvirku">Zaustavi Svirku</button>
+
+        }
+
+	</div>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Datoeka</th>
+				<th>Pusti</th>
+				<th>Obrisi</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var fajla in baza)
+			{
+				<tr>
+					<td>@fajla.Name</td>
+                    <td>
+
+                        <button type="button" class="btn btn-primary" @onclick="()=>SvirajFajlu(fajla)">Play</button>
+                    </td>
+					<td>@fajla.EmbededResoce</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
 
 
 
 @code {
+    List<AudioModel> baza { get; set; }
 
+    public IAudioPlayer audioPlayer;
+
+    protected override void OnInitialized()
+    {
+
+        baza = _bazaServis.AudioBaza();
+    }
+
+    public void PrekiniSvirku()
+    {
+        audioPlayer?.Stop();
+    }
+    
+    public async void SvirajFajlu(AudioModel fajla)
+    {
+        PrekiniSvirku();
+
+        if (fajla.EmbededResoce)
+        {
+            this.audioPlayer = _audioManager.CreatePlayer(await FileSystem.OpenAppPackageFileAsync(fajla.FullPath));
+        }
+        else
+        {
+            var stream = File.OpenRead(fajla.FullPath);
+            audioPlayer = AudioManager.Current.CreatePlayer(stream); // works
+
+        }
+        this.audioPlayer.Play();
+    }
+
+    public async Task OdaberiFajlu()
+    {
+        try
+        {
+            var customFileType = new FilePickerFileType(
+                new Dictionary<DevicePlatform, IEnumerable<string>>
+                        {
+
+                        { DevicePlatform.Android, new[] { "audio/*" } }, // MIME type
+                        { DevicePlatform.WinUI, new[] { ".mp3", ".mp3" } }, // file extension
+                        });
+
+            PickOptions options = new()
+                {
+                    PickerTitle = "Odaberite zan",
+                    FileTypes = customFileType,
+                };
+
+
+            var result = await FilePicker.Default.PickAsync(options);
+
+            if (result != null)
+            {
+                AudioModel audioModel = new AudioModel() { EmbededResoce = false, FullPath = result.FullPath, IsUsed = false, Name = result.FileName };
+                AudioModel newAudio = await _bazaServis.SaveAudio(audioModel);
+                this.baza.Add(newAudio);
+            }
+            else
+            {
+                
+            }
+        }
+        catch (Exception ex)
+        {
+            
+        }
+        StateHasChanged();
+    }
 }
