@@ -36,7 +36,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.godinaNumeric)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.godinaNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -49,20 +49,20 @@
             // 
             // godinaNumeric
             // 
-            this.godinaNumeric.Location = new System.Drawing.Point(252, 115);
-            this.godinaNumeric.Name = "godinaNumeric";
-            this.godinaNumeric.Size = new System.Drawing.Size(120, 20);
-            this.godinaNumeric.TabIndex = 1;
+            //this.godinaNumeric.Location = new System.Drawing.Point(252, 115);
+            //this.godinaNumeric.Name = "godinaNumeric";
+            //this.godinaNumeric.Size = new System.Drawing.Size(120, 20);
+            //this.godinaNumeric.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(252, 152);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Učitaj i spasi";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            //this.button1.Location = new System.Drawing.Point(252, 152);
+            //this.button1.Name = "button1";
+            //this.button1.Size = new System.Drawing.Size(75, 23);
+            //this.button1.TabIndex = 2;
+            //this.button1.Text = "Učitaj i spasi";
+            //this.button1.UseVisualStyleBackColor = true;
+            //this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -89,13 +89,13 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.godinaNumeric);
+            //this.Controls.Add(this.button1);
+            //this.Controls.Add(this.godinaNumeric);
             this.Controls.Add(this.comboBox1);
             this.Name = "ApiDownload";
             this.Text = "Preuzmite podatke";
             this.Load += new System.EventHandler(this.ApiDownload_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.godinaNumeric)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.godinaNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,7 +108,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown godinaNumeric;
-        private System.Windows.Forms.Button button1;
+        //private System.Windows.Forms.NumericUpDown godinaNumeric;
+        //private System.Windows.Forms.Button button1;
     }
 }

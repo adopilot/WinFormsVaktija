@@ -117,1650 +117,707 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 20</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 13</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-    <value>96, 13</value>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Vremena ezana se nalaze u TXT datoteci</value>
-    <value>34</value>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-    <value>656, 11</value>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>32</value>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>7</value>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>41</value>
-    <value>ezanIkindija</value>
-  <metadata name="textBoxExcelFajla.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="textBoxExcelFajla.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 17</value>
-    <value>00:00</value>
-  <data name="textBoxExcelFajla.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 20</value>
-    <value>Jacija:</value>
-  <data name="textBoxExcelFajla.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-    <value>33</value>
-  <data name="&gt;&gt;textBoxExcelFajla.Name" xml:space="preserve">
-    <value>textBoxExcelFajla</value>
-  </data>
-  <data name="&gt;&gt;textBoxExcelFajla.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxExcelFajla.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxExcelFajla.ZOrder" xml:space="preserve">
-    <value>40</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 15</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 23</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Nađi datoteku</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>39</value>
-  </data>
-  <metadata name="openFileDialogExcel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>124, 17</value>
-  </metadata>
-  <data name="monthCalendar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 57</value>
-  </data>
-  <data name="monthCalendar1.TabIndex" type="System.Int32, mscorlib">
-  <data name="&gt;&gt;volumeSliderPodne.ZOrder" xml:space="preserve">
-    <value>4</value>
-  <data name="&gt;&gt;monthCalendar1.Name" xml:space="preserve">
-    <value>monthCalendar1</value>
-  </data>
-  <data name="&gt;&gt;monthCalendar1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;monthCalendar1.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>$this</value>
-  <data name="&gt;&gt;monthCalendar1.ZOrder" xml:space="preserve">
-    <value>38</value>
+  <data name="volumeSliderPodne.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 16</value>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>33</value>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 65</value>
-    <value>6, 13</value>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 13</value>
-    <value>label15</value>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-    <value>52, 17</value>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Zora:</value>
-    <value>29</value>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>37</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 91</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 13</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Izazak sunca:</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>36</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 121</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 13</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-    <value>7</value>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Podne:</value>
-    <value>96, 16</value>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>15, 302</value>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>36</value>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>35</value>
-    <value>1</value>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>18</value>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 143</value>
-    <value>136, 23</value>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
-    <value>650, 28</value>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-    <value>4</value>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Ikindija:</value>
-    <value>ezanPodne</value>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>34</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>True</value>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 169</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 13</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Akšam:</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>33</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 195</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 13</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Jacija:</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>NAudio.Gui.VolumeSlider, NAudio, Version=1.8.3.0, Culture=neutral, PublicKeyToken=null</value>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>32</value>
-    <value>25</value>
-  <data name="textBoxZora.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 62</value>
-    <value>groupBoxTester</value>
-  <data name="textBoxZora.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="textBoxZora.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-    <value>55, 13</value>
-  <data name="&gt;&gt;textBoxZora.Name" xml:space="preserve">
-    <value>textBoxZora</value>
-  </data>
-  <data name="&gt;&gt;textBoxZora.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxZora.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxZora.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="textBoxIzlazak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 88</value>
-  </data>
-  <data name="textBoxIzlazak.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textBoxIzlazak.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;textBoxIzlazak.Name" xml:space="preserve">
-    <value>textBoxIzlazak</value>
-  </data>
-  <data name="&gt;&gt;textBoxIzlazak.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxIzlazak.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxIzlazak.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="textBoxPodne.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 114</value>
-    <value>319, 114</value>
-  <data name="textBoxPodne.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="textBoxPodne.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-    <value>93, 28</value>
-  <data name="&gt;&gt;textBoxPodne.Name" xml:space="preserve">
-    <value>textBoxPodne</value>
-  </data>
-  <data name="&gt;&gt;textBoxPodne.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxPodne.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>$this</value>
-  <data name="&gt;&gt;textBoxPodne.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="textBoxIkindija.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 140</value>
-  </data>
-  <data name="textBoxIkindija.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textBoxIkindija.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;textBoxIkindija.Name" xml:space="preserve">
-    <value>textBoxIkindija</value>
-  </data>
-  <data name="&gt;&gt;textBoxIkindija.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxIkindija.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxIkindija.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="textBoxAksam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 166</value>
-  </data>
-  <data name="textBoxAksam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-    <value>100, 20</value>
-  <data name="textBoxAksam.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;textBoxAksam.Name" xml:space="preserve">
-    <value>textBoxAksam</value>
-  </data>
-  <data name="&gt;&gt;textBoxAksam.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxAksam.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxAksam.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="textBoxJacija.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 192</value>
-  </data>
-  <data name="textBoxJacija.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="textBoxJacija.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;textBoxJacija.Name" xml:space="preserve">
-    <value>textBoxJacija</value>
-  </data>
-  <data name="&gt;&gt;textBoxJacija.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxJacija.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxJacija.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="ezaniZora.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ezaniZora.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 65</value>
-  </data>
-  <data name="ezaniZora.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
-  </data>
-  <data name="ezaniZora.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="ezaniZora.Text" xml:space="preserve">
-    <value>Ezani</value>
-  </data>
-  <data name="&gt;&gt;ezaniZora.Name" xml:space="preserve">
-    <value>ezaniZora</value>
-  </data>
-  <data name="&gt;&gt;ezaniZora.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ezaniZora.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ezaniZora.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="ezaniIzlazak.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>True</value>
-  <data name="ezaniIzlazak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 91</value>
-  </data>
-  <data name="ezaniIzlazak.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
-  </data>
-  <data name="ezaniIzlazak.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
   </data>
   <data name="ezaniIzlazak.Text" xml:space="preserve">
     <value>Ezani</value>
   </data>
-  <data name="&gt;&gt;ezaniIzlazak.Name" xml:space="preserve">
-    <value>ezaniIzlazak</value>
+  <data name="&gt;&gt;volumeSliderPodne.Type" xml:space="preserve">
+    <value>NAudio.Gui.VolumeSlider, NAudio.WinForms, Culture=neutral, PublicKeyToken=e279aa5131008a41</value>
   </data>
-  <data name="&gt;&gt;ezaniIzlazak.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;ezaniIzlazak.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>636, 60</value>
-  <data name="&gt;&gt;ezaniIzlazak.ZOrder" xml:space="preserve">
-    <value>24</value>
-    <value>136, 23</value>
-  <data name="ezaniPodne.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>37</value>
-  <data name="ezaniPodne.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 114</value>
-    <value>778, 192</value>
-  <data name="ezaniPodne.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
-    <value>268, 28</value>
-  <data name="ezaniPodne.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="ezaniPodne.Text" xml:space="preserve">
-    <value>Ezani</value>
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;ezaniPodne.Name" xml:space="preserve">
-    <value>ezaniPodne</value>
-    <value>17</value>
-  <data name="&gt;&gt;ezaniPodne.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>numericIzlazak</value>
-  <data name="&gt;&gt;ezaniPodne.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>14</value>
-  <data name="&gt;&gt;ezaniPodne.ZOrder" xml:space="preserve">
-    <value>23</value>
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="ezaniIkindija.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>2</value>
-  <data name="ezaniIkindija.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 142</value>
-    <value>Ikindija</value>
-  <data name="ezaniIkindija.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
-    <value>226, 91</value>
-  <data name="ezaniIkindija.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-    <value>25</value>
-  <data name="ezaniIkindija.Text" xml:space="preserve">
-    <value>Ezani</value>
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;ezaniIkindija.Name" xml:space="preserve">
-    <value>ezaniIkindija</value>
-    <value>textBoxSlijedeciNamazLbl</value>
-  <data name="&gt;&gt;ezaniIkindija.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>81, 13</value>
-  </data>
-  <data name="&gt;&gt;ezaniIkindija.Parent" xml:space="preserve">
+  <data name="&gt;&gt;volumeSliderIkindija.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;ezaniIkindija.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="ezaniAksam.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ezaniAksam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 168</value>
-  </data>
-  <data name="ezaniAksam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
-  <data name="ezaniAksam.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="ezaniAksam.Text" xml:space="preserve">
-    <value>Ezani</value>
-  </data>
-  <data name="&gt;&gt;ezaniAksam.Name" xml:space="preserve">
-    <value>ezaniAksam</value>
-  </data>
-  <data name="&gt;&gt;ezaniAksam.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ezaniAksam.Parent" xml:space="preserve">
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>$this</value>
-  <data name="&gt;&gt;ezaniAksam.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="ezaniJacija.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ezaniJacija.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 194</value>
-  </data>
-  <data name="ezaniJacija.Size" type="System.Drawing.Size, System.Drawing">
-  <data name="ezaniIzlazak.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
-  <data name="ezaniJacija.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="ezaniJacija.Text" xml:space="preserve">
-    <value>Ezani</value>
-  </data>
-  <data name="&gt;&gt;ezaniJacija.Name" xml:space="preserve">
-    <value>ezaniJacija</value>
-  </data>
-  <data name="&gt;&gt;ezaniJacija.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;ezaniJacija.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>226, 169</value>
-  <data name="&gt;&gt;ezaniJacija.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="numericZora.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 64</value>
-  </data>
-  <data name="numericZora.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 20</value>
-  </data>
-  <data name="numericZora.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="&gt;&gt;numericZora.Name" xml:space="preserve">
-    <value>numericZora</value>
-  </data>
-  <data name="&gt;&gt;numericZora.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numericZora.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;numericZora.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="numericIzlazak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>583, 91</value>
-  </data>
-  <data name="numericIzlazak.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 20</value>
-  </data>
-  <data name="numericIzlazak.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;numericIzlazak.Name" xml:space="preserve">
-    <value>numericIzlazak</value>
-    <value>Stop</value>
-  <data name="&gt;&gt;numericIzlazak.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>Microsoft Sans Serif, 30pt</value>
-  <data name="&gt;&gt;numericIzlazak.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>525, 28</value>
-  <data name="&gt;&gt;numericIzlazak.ZOrder" xml:space="preserve">
-    <value>18</value>
-    <value>Microsoft Sans Serif, 10pt</value>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>153, 23</value>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>492, 66</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Korekcija minuta</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-  <data name="&gt;&gt;ezanIzlazak.Parent" xml:space="preserve">
-    <value>$this</value>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>17</value>
-    <value>86, 13</value>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>35</value>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>492, 93</value>
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
-    <value>Jacija</value>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-    <value>comboBoxTest</value>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Korekcija minuta</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="ezanZora.Location" type="System.Drawing.Point, System.Drawing">
-    <value>636, 60</value>
-  </data>
-  <data name="ezanZora.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 23</value>
-  </data>
-  <data name="ezanZora.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="ezanZora.Text" xml:space="preserve">
-    <value>Ezan zora</value>
-  </data>
-  <data name="&gt;&gt;ezanZora.Name" xml:space="preserve">
-    <value>ezanZora</value>
-  </data>
-  <data name="&gt;&gt;ezanZora.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ezanZora.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ezanZora.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="ezanIzlazak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>636, 87</value>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="ezanIzlazak.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 23</value>
   </data>
-  <data name="ezanIzlazak.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="ezanIzlazak.Text" xml:space="preserve">
-    <value>Ezan izlazak sunca</value>
-  </data>
-  <data name="&gt;&gt;ezanIzlazak.Name" xml:space="preserve">
-    <value>ezanIzlazak</value>
-  </data>
-  <data name="&gt;&gt;ezanIzlazak.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ezanIzlazak.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ezanIzlazak.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="ezanPodne.Location" type="System.Drawing.Point, System.Drawing">
-    <value>636, 112</value>
-    <value>636, 112</value>
-  <data name="ezanPodne.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 23</value>
-  </data>
-  <data name="ezanPodne.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="ezanPodne.Text" xml:space="preserve">
-    <value>Ezan podne</value>
-  </data>
-  <data name="&gt;&gt;ezanPodne.Name" xml:space="preserve">
-    <value>ezanPodne</value>
-  </data>
-  <data name="&gt;&gt;ezanPodne.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ezanPodne.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>$this</value>
-  <data name="&gt;&gt;ezanPodne.ZOrder" xml:space="preserve">
-    <value>13</value>
-    <value>label11</value>
-  <data name="ezanIkindija.Location" type="System.Drawing.Point, System.Drawing">
-    <value>636, 138</value>
-  </data>
-  <data name="ezanIkindija.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 23</value>
-  </data>
-  <data name="ezanIkindija.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="ezanIkindija.Text" xml:space="preserve">
-    <value>Ezan ikindija</value>
-  </data>
-  <data name="&gt;&gt;ezanIkindija.Name" xml:space="preserve">
-    <value>ezanIkindija</value>
-  </data>
-  <data name="&gt;&gt;ezanIkindija.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ezanIkindija.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ezanIkindija.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="ezanAksam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>636, 164</value>
-  </data>
-  <data name="ezanAksam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 23</value>
-  </data>
-  <data name="ezanAksam.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="ezanAksam.Text" xml:space="preserve">
-    <value>Ezan Akšam</value>
-  </data>
-  <data name="&gt;&gt;ezanAksam.Name" xml:space="preserve">
-    <value>ezanAksam</value>
-  </data>
-  <data name="&gt;&gt;ezanAksam.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ezanAksam.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ezanAksam.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="ezanJacija.Location" type="System.Drawing.Point, System.Drawing">
-    <value>636, 190</value>
-  </data>
-  <data name="ezanJacija.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 23</value>
-  </data>
-  <data name="ezanJacija.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="ezanJacija.Text" xml:space="preserve">
-    <value>Ezan jacija</value>
-  </data>
-  <data name="&gt;&gt;ezanJacija.Name" xml:space="preserve">
-    <value>ezanJacija</value>
-  </data>
-  <data name="&gt;&gt;ezanJacija.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ezanJacija.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ezanJacija.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <metadata name="openFileDialogMp3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>285, 17</value>
-  </metadata>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>476, 33</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 23</value>
-    <value>127, 23</value>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-    <value>221, 17</value>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Test</value>
-    <value>24</value>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-    <value>357, 31</value>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>52, 17</value>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>groupBoxTester</value>
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>4</value>
-    <value>label9</value>
-  <data name="TesterPojacivac.Location" type="System.Drawing.Point, System.Drawing">
-    <value>362, 38</value>
-    <value>volumeSliderPodne</value>
-  <data name="TesterPojacivac.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TesterPojacivac.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
-    <value>groupBox1</value>
-  <data name="&gt;&gt;TesterPojacivac.Name" xml:space="preserve">
-    <value>TesterPojacivac</value>
-  </data>
-  <data name="&gt;&gt;TesterPojacivac.Type" xml:space="preserve">
-    <value>NAudio.Gui.VolumeSlider, NAudio, Version=1.8.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TesterPojacivac.Parent" xml:space="preserve">
-    <value>groupBoxTester</value>
-  </data>
-  <data name="&gt;&gt;TesterPojacivac.ZOrder" xml:space="preserve">
-    <value>5</value>
-    <value>5</value>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
-  </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
-    <value>groupBoxTester</value>
-  </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>groupBoxTester</value>
-  </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>groupBoxTester</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTest.Name" xml:space="preserve">
-    <value>comboBoxTest</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTest.Parent" xml:space="preserve">
-    <value>groupBoxTester</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTest.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="groupBoxTester.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 231</value>
-  </data>
-  <data name="groupBoxTester.Size" type="System.Drawing.Size, System.Drawing">
-    <value>859, 65</value>
-  </data>
-  <data name="groupBoxTester.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="groupBoxTester.Text" xml:space="preserve">
-    <value>Testni mujezin</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTester.Name" xml:space="preserve">
-    <value>groupBoxTester</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTester.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxTester.Parent" xml:space="preserve">
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>$this</value>
-  <data name="&gt;&gt;groupBoxTester.ZOrder" xml:space="preserve">
-    <value>9</value>
-    <value>43</value>
-  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>22</value>
-  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 38</value>
-  </data>
-  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
-  </data>
-  <data name="label15.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="label15.Text" xml:space="preserve">
-    <value>Glasnoća:</value>
-  </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
-  </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
-    <value>groupBoxTester</value>
-  </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>True</value>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 38</value>
-    <value>136, 23</value>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 13</value>
-  </data>
-  <data name="label14.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>Ezan za namaz:</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>groupBoxTester</value>
-  </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>609, 33</value>
-  </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 23</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="button3.Text" xml:space="preserve">
-    <value>Stop</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>groupBoxTester</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="comboBoxTest.Items" xml:space="preserve">
-    <value>Zora</value>
-  </data>
-  <data name="comboBoxTest.Items1" xml:space="preserve">
-    <value>Izlazak</value>
-  </data>
-  <data name="comboBoxTest.Items2" xml:space="preserve">
-    <value>Podne</value>
-  </data>
-  <data name="comboBoxTest.Items3" xml:space="preserve">
-    <value>Ikindija</value>
-  </data>
-  <data name="comboBoxTest.Items4" xml:space="preserve">
-    <value>Aksam</value>
-  </data>
-  <data name="comboBoxTest.Items5" xml:space="preserve">
-    <value>Jacija</value>
-  </data>
-  <data name="comboBoxTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 35</value>
-  </data>
-  <data name="comboBoxTest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 21</value>
-    <value>194, 21</value>
-  <data name="comboBoxTest.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-    <value>Ezani</value>
-  <data name="&gt;&gt;comboBoxTest.Name" xml:space="preserve">
-    <value>comboBoxTest</value>
-    <value>778, 65</value>
-  <data name="&gt;&gt;comboBoxTest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>$this</value>
-  <data name="&gt;&gt;comboBoxTest.Parent" xml:space="preserve">
-    <value>groupBoxTester</value>
-  </data>
-  <data name="&gt;&gt;comboBoxTest.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;labelLastEvent.Name" xml:space="preserve">
-    <value>labelLastEvent</value>
-  </data>
-  <data name="&gt;&gt;labelLastEvent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelLastEvent.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;labelLastEvent.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;checkBoxMujezin.Name" xml:space="preserve">
-    <value>checkBoxMujezin</value>
-  </data>
-  <data name="&gt;&gt;checkBoxMujezin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBoxMujezin.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;checkBoxMujezin.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;textBoxDoNamaza.Name" xml:space="preserve">
-    <value>textBoxDoNamaza</value>
-  </data>
-  <data name="&gt;&gt;textBoxDoNamaza.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxDoNamaza.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-    <value>groupBox1</value>
-  <data name="&gt;&gt;textBoxDoNamaza.ZOrder" xml:space="preserve">
-    <value>3</value>
-    <value>127, 23</value>
-  <data name="&gt;&gt;label12.Name" xml:space="preserve">
-    <value>label12</value>
-    <value>32, 13</value>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-    <value>28</value>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>4</value>
-    <value>26</value>
-  <data name="&gt;&gt;textBoxSlijedeciNamaz.Name" xml:space="preserve">
-    <value>textBoxSlijedeciNamaz</value>
-    <value>10</value>
-  <data name="&gt;&gt;textBoxSlijedeciNamaz.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;textBoxSlijedeciNamaz.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-    <value>Ezani</value>
-  <data name="&gt;&gt;textBoxSlijedeciNamaz.ZOrder" xml:space="preserve">
-    <value>5</value>
-    <value>26</value>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-    <value>$this</value>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>Microsoft Sans Serif, 30pt</value>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-    <value>$this</value>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;textBoxSlijedeciNamazLbl.Name" xml:space="preserve">
-    <value>textBoxSlijedeciNamazLbl</value>
-  </data>
-  <data name="&gt;&gt;textBoxSlijedeciNamazLbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;textBoxSlijedeciNamazLbl.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-    <value>volumeSliderIkindija</value>
-  <data name="&gt;&gt;textBoxSlijedeciNamazLbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-    <value>textBoxZora</value>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-    <value>$this</value>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>82, 13</value>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-    <value>$this</value>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>8</value>
-    <value>$this</value>
-  <data name="&gt;&gt;textBoxSada.Name" xml:space="preserve">
-    <value>textBoxSada</value>
-    <value>volumeSliderAksam</value>
-  <data name="&gt;&gt;textBoxSada.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>button4</value>
-  <data name="&gt;&gt;textBoxSada.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;textBoxSada.ZOrder" xml:space="preserve">
-    <value>9</value>
-    <value>$this</value>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 302</value>
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>916, 139</value>
-    <value>textBoxPodne</value>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-    <value>583, 91</value>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Mujezin</value>
-    <value>41, 13</value>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
-    <value>136, 23</value>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="labelLastEvent.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelLastEvent.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 20pt</value>
-    <value>Microsoft Sans Serif, 20pt</value>
-  <data name="labelLastEvent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 96</value>
-    <value>groupBoxTester</value>
-  <data name="labelLastEvent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 31</value>
-  </data>
-  <data name="labelLastEvent.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="labelLastEvent.Text" xml:space="preserve">
-    <value>Zadnji event ov je neki event</value>
-  </data>
-  <data name="&gt;&gt;labelLastEvent.Name" xml:space="preserve">
-    <value>labelLastEvent</value>
-  </data>
-  <data name="&gt;&gt;labelLastEvent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelLastEvent.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;labelLastEvent.ZOrder" xml:space="preserve">
-    <value>0</value>
-    <value>0</value>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="checkBoxMujezin.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
-    <value>44</value>
-  <data name="checkBoxMujezin.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>319, 192</value>
-  <data name="checkBoxMujezin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-    <value>80, 13</value>
-  <data name="checkBoxMujezin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 41</value>
-    <value>434, 142</value>
-  <data name="checkBoxMujezin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 27</value>
-    <value>monthCalendar1</value>
-  <data name="checkBoxMujezin.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-    <value>39</value>
-  <data name="checkBoxMujezin.Text" xml:space="preserve">
-    <value>Uključen</value>
-    <value>492, 93</value>
-  <data name="&gt;&gt;checkBoxMujezin.Name" xml:space="preserve">
-    <value>checkBoxMujezin</value>
-    <value>47, 20</value>
-  <data name="&gt;&gt;checkBoxMujezin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;checkBoxMujezin.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;checkBoxMujezin.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>656, 11</value>
-  </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 13</value>
-  </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Vrijeme do namaza</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>2</value>
-    <value>110, 23</value>
-  <data name="textBoxDoNamaza.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 30pt</value>
-    <value>37</value>
-  <data name="textBoxDoNamaza.Location" type="System.Drawing.Point, System.Drawing">
-    <value>650, 28</value>
-    <value>636, 190</value>
-  <data name="textBoxDoNamaza.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 53</value>
-    <value>251, 53</value>
-  <data name="textBoxDoNamaza.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-    <value>volumeSliderZora</value>
-  <data name="textBoxDoNamaza.Text" xml:space="preserve">
-    <value>00:00:00</value>
-    <value>284, 20</value>
-  <data name="&gt;&gt;textBoxDoNamaza.Name" xml:space="preserve">
-    <value>textBoxDoNamaza</value>
-    <value>434, 114</value>
-  <data name="&gt;&gt;textBoxDoNamaza.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>$this</value>
-  <data name="&gt;&gt;textBoxDoNamaza.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-    <value>$this</value>
-  <data name="&gt;&gt;textBoxDoNamaza.ZOrder" xml:space="preserve">
-    <value>3</value>
-    <value>groupBoxTester</value>
-  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>True</value>
-  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 11</value>
-  </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 13</value>
-  </data>
-  <data name="label12.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Vrijeme namaza</value>
-  </data>
-  <data name="&gt;&gt;label12.Name" xml:space="preserve">
-    <value>label12</value>
-  </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="textBoxSlijedeciNamaz.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 30pt</value>
-  </data>
-  <data name="textBoxSlijedeciNamaz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 28</value>
-  </data>
-  <data name="textBoxSlijedeciNamaz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 53</value>
-  </data>
-  <data name="textBoxSlijedeciNamaz.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="textBoxSlijedeciNamaz.Text" xml:space="preserve">
-    <value>00:00</value>
-  </data>
-  <data name="&gt;&gt;textBoxSlijedeciNamaz.Name" xml:space="preserve">
-    <value>textBoxSlijedeciNamaz</value>
-  </data>
-  <data name="&gt;&gt;textBoxSlijedeciNamaz.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;textBoxSlijedeciNamaz.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;textBoxSlijedeciNamaz.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>265, 11</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 13</value>
-  </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Slijedeći namaz</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="textBoxSlijedeciNamazLbl.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 30pt</value>
-  </data>
-  <data name="textBoxSlijedeciNamazLbl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>268, 28</value>
-  </data>
-  <data name="textBoxSlijedeciNamazLbl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 53</value>
-  </data>
-  <data name="textBoxSlijedeciNamazLbl.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="textBoxSlijedeciNamazLbl.Text" xml:space="preserve">
-    <value>Izlazak sunca</value>
-    <value>136, 23</value>
-  <data name="&gt;&gt;textBoxSlijedeciNamazLbl.Name" xml:space="preserve">
-    <value>textBoxSlijedeciNamazLbl</value>
-    <value>ezanIzlazak</value>
-  <data name="&gt;&gt;textBoxSlijedeciNamazLbl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>label12</value>
-  <data name="&gt;&gt;textBoxSlijedeciNamazLbl.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-    <value>319, 62</value>
-  <data name="&gt;&gt;textBoxSlijedeciNamazLbl.ZOrder" xml:space="preserve">
-    <value>7</value>
-    <value>Podne:</value>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>90, 11</value>
-    <value>522, 11</value>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 13</value>
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-    <value>1</value>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Trenutno vrijeme</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="textBoxSada.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 30pt</value>
-  </data>
-  <data name="textBoxSada.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 28</value>
-  </data>
-  <data name="textBoxSada.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 53</value>
-  </data>
-  <data name="textBoxSada.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="textBoxSada.Text" xml:space="preserve">
-    <value>00:00:00</value>
-  </data>
-  <data name="&gt;&gt;textBoxSada.Name" xml:space="preserve">
-    <value>textBoxSada</value>
-  </data>
-  <data name="&gt;&gt;textBoxSada.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxSada.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;textBoxSada.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <metadata name="timerSada.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="volumeSliderZora.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 65</value>
-  </data>
-  <data name="volumeSliderZora.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="volumeSliderZora.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-    <value>Ezani</value>
-  <data name="&gt;&gt;volumeSliderZora.Name" xml:space="preserve">
-    <value>volumeSliderZora</value>
-    <value>Izlazak</value>
-  <data name="&gt;&gt;volumeSliderZora.Type" xml:space="preserve">
-    <value>NAudio.Gui.VolumeSlider, NAudio, Version=1.8.3.0, Culture=neutral, PublicKeyToken=null</value>
-    <value>textBoxJacija</value>
-  </data>
-  <data name="&gt;&gt;volumeSliderZora.Parent" xml:space="preserve">
-    <value>$this</value>
-  <data name="&gt;&gt;volumeSliderZora.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="volumeSliderIzlazak.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 89</value>
-  </data>
-  <data name="volumeSliderIzlazak.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="volumeSliderIzlazak.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;volumeSliderIzlazak.Name" xml:space="preserve">
-    <value>volumeSliderIzlazak</value>
-    <value>265, 11</value>
-  <data name="&gt;&gt;volumeSliderIzlazak.Type" xml:space="preserve">
-    <value>NAudio.Gui.VolumeSlider, NAudio, Version=1.8.3.0, Culture=neutral, PublicKeyToken=null</value>
-    <value>27</value>
-  <data name="&gt;&gt;volumeSliderIzlazak.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>$this</value>
-  <data name="&gt;&gt;volumeSliderIzlazak.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="volumeSliderPodne.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 112</value>
-  </data>
-  <data name="volumeSliderPodne.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="volumeSliderPodne.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;volumeSliderPodne.Name" xml:space="preserve">
-    <value>volumeSliderPodne</value>
-  </data>
-  <data name="&gt;&gt;volumeSliderPodne.Type" xml:space="preserve">
-    <value>NAudio.Gui.VolumeSlider, NAudio, Version=1.8.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;volumeSliderPodne.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;volumeSliderPodne.ZOrder" xml:space="preserve">
-    <value>5</value>
-    <value>Ezani</value>
-  <data name="volumeSliderIkindija.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 140</value>
-    <value>ezanAksam</value>
-  <data name="volumeSliderIkindija.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-    <value>203, 13</value>
-  </data>
-  <data name="volumeSliderIkindija.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  <data name="&gt;&gt;volumeSliderIkindija.Name" xml:space="preserve">
-    <value>volumeSliderIkindija</value>
-    <value>42</value>
-  <data name="&gt;&gt;volumeSliderIkindija.Type" xml:space="preserve">
-    <value>NAudio.Gui.VolumeSlider, NAudio, Version=1.8.3.0, Culture=neutral, PublicKeyToken=null</value>
-    <value>label8</value>
-  <data name="&gt;&gt;volumeSliderIkindija.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>label13</value>
-  <data name="&gt;&gt;volumeSliderIkindija.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="volumeSliderAksam.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 166</value>
-  </data>
-  <data name="volumeSliderAksam.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="volumeSliderAksam.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="&gt;&gt;volumeSliderAksam.Name" xml:space="preserve">
-    <value>volumeSliderAksam</value>
-  </data>
-  <data name="&gt;&gt;volumeSliderAksam.Type" xml:space="preserve">
-    <value>NAudio.Gui.VolumeSlider, NAudio, Version=1.8.3.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;volumeSliderAksam.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;volumeSliderAksam.ZOrder" xml:space="preserve">
-  <data name="&gt;&gt;volumeSliderIkindija.ZOrder" xml:space="preserve">
-    <value>3</value>
-  <data name="volumeSliderJacija.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 192</value>
-  </data>
-  <data name="volumeSliderJacija.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="volumeSliderJacija.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;volumeSliderJacija.Name" xml:space="preserve">
-    <value>volumeSliderJacija</value>
-    <value>0</value>
-  <data name="&gt;&gt;volumeSliderJacija.Type" xml:space="preserve">
-    <value>NAudio.Gui.VolumeSlider, NAudio, Version=1.8.3.0, Culture=neutral, PublicKeyToken=null</value>
-    <value>7</value>
-  <data name="&gt;&gt;volumeSliderJacija.Parent" xml:space="preserve">
-    <value>$this</value>
-    <value>12</value>
-  <data name="&gt;&gt;volumeSliderJacija.ZOrder" xml:space="preserve">
-    <value>2</value>
-    <value>21</value>
-  <data name="checkBoxPodne.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-    <value>True</value>
-  <data name="checkBoxPodne.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="checkBoxPodne.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 114</value>
-  </data>
-  <data name="checkBoxPodne.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 17</value>
-  </data>
-  <data name="checkBoxPodne.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="checkBoxPodne.Text" xml:space="preserve">
-    <value>Ezani uvijek u 12 (13)</value>
-  </data>
-  <data name="&gt;&gt;checkBoxPodne.Name" xml:space="preserve">
-    <value>checkBoxPodne</value>
-  </data>
-  <data name="&gt;&gt;checkBoxPodne.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBoxPodne.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;checkBoxPodne.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>636, 15</value>
-  </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 23</value>
-  </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="button4.Text" xml:space="preserve">
-    <value>preuzmi sa vaktija.ba</value>
-  </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
-  </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button4.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
-    <value>0</value>
-    <value>5, 38</value>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="ezanJacija.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="ezaniIkindija.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="volumeSliderIzlazak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 16</value>
+  </data>
+  <data name="ezanAksam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 23</value>
+  </data>
+  <data name="ezaniIzlazak.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderZora.Type" xml:space="preserve">
+    <value>NAudio.Gui.VolumeSlider, NAudio.WinForms, Culture=neutral, PublicKeyToken=e279aa5131008a41</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;ezanZora.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxSlijedeciNamaz.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelLastEvent.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 20pt</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Korekcija minuta</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="textBoxJacija.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 192</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>Preuzmi sa vaktija.ba</value>
+  </data>
+  <data name="&gt;&gt;textBoxDoNamaza.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ezaniPodne.Name" xml:space="preserve">
+    <value>ezaniPodne</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="&gt;&gt;monthCalendar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Slijedeći namaz</value>
+  </data>
+  <data name="textBoxZora.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 62</value>
+  </data>
+  <data name="labelLastEvent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 96</value>
+  </data>
+  <data name="textBoxSada.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 30pt</value>
+  </data>
+  <data name="textBoxExcelFajla.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 20</value>
+  </data>
+  <data name="checkBoxMujezin.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>69</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;ezanPodne.Name" xml:space="preserve">
+    <value>ezanPodne</value>
+  </data>
+  <data name="&gt;&gt;ezaniAksam.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="textBoxZora.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderIkindija.Name" xml:space="preserve">
+    <value>volumeSliderIkindija</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Vrijeme do namaza</value>
+  </data>
+  <data name="textBoxPodne.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 114</value>
+  </data>
+  <data name="&gt;&gt;textBoxDoNamaza.Name" xml:space="preserve">
+    <value>textBoxDoNamaza</value>
+  </data>
+  <data name="&gt;&gt;labelLastEvent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 13</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="comboBoxTest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 21</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ezanIkindija.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="checkBoxPodne.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="ezaniPodne.Text" xml:space="preserve">
+    <value>Ezani</value>
+  </data>
+  <data name="textBoxSlijedeciNamazLbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 30pt</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderIkindija.Type" xml:space="preserve">
+    <value>NAudio.Gui.VolumeSlider, NAudio.WinForms, Culture=neutral, PublicKeyToken=e279aa5131008a41</value>
+  </data>
+  <data name="&gt;&gt;ezaniIkindija.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="ezanAksam.Text" xml:space="preserve">
+    <value>ezanAksam</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogMp3.Name" xml:space="preserve">
+    <value>openFileDialogMp3</value>
+  </data>
+  <data name="ezaniJacija.Text" xml:space="preserve">
+    <value>Ezani</value>
+  </data>
+  <data name="ezanIzlazak.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 169</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 66</value>
+  </data>
+  <data name="ezanJacija.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 23</value>
+  </data>
+  <data name="textBoxIkindija.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 140</value>
+  </data>
+  <data name="&gt;&gt;numericIzlazak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ezanZora.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 60</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderAksam.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="groupBoxTester.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 231</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="checkBoxMujezin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 41</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxIkindija.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ezaniIkindija.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxSada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogMp3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ezanJacija.Name" xml:space="preserve">
+    <value>ezanJacija</value>
+  </data>
+  <data name="textBoxZora.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="numericIzlazak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>583, 91</value>
+  </data>
+  <data name="&gt;&gt;checkBoxPodne.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ezanJacija.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 190</value>
+  </data>
+  <data name="&gt;&gt;textBoxPodne.Name" xml:space="preserve">
+    <value>textBoxPodne</value>
+  </data>
+  <data name="volumeSliderPodne.Location" type="System.Drawing.Point, System.Drawing">
+    <value>778, 112</value>
+  </data>
+  <data name="textBoxDoNamaza.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 30pt</value>
+  </data>
+  <data name="&gt;&gt;ezanAksam.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ezaniAksam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 38</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 38</value>
+  </data>
+  <data name="&gt;&gt;checkBoxMujezin.Name" xml:space="preserve">
+    <value>checkBoxMujezin</value>
+  </data>
+  <data name="&gt;&gt;numericIzlazak.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Ezan za namaz:</value>
+  </data>
+  <data name="comboBoxTest.Items1" xml:space="preserve">
+    <value>Izlazak</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>656, 11</value>
+  </data>
+  <data name="ezaniIzlazak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="ezaniIzlazak.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderAksam.Name" xml:space="preserve">
+    <value>volumeSliderAksam</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="ezaniPodne.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;checkBoxMujezin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderJacija.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxIzlazak.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;ezaniAksam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numericIzlazak.Name" xml:space="preserve">
+    <value>numericIzlazak</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxPodne.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;checkBoxPodne.Name" xml:space="preserve">
+    <value>checkBoxPodne</value>
+  </data>
+  <data name="checkBoxPodne.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 17</value>
+  </data>
+  <data name="&gt;&gt;textBoxSada.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="monthCalendar1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="&gt;&gt;ezanIkindija.Name" xml:space="preserve">
+    <value>ezanIkindija</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Korekcija minuta</value>
+  </data>
+  <data name="&gt;&gt;textBoxSlijedeciNamaz.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="checkBoxPodne.Text" xml:space="preserve">
+    <value>Ezani uvijek u 12 (13)</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ezaniJacija.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 93</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="textBoxIkindija.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;ezaniZora.Name" xml:space="preserve">
+    <value>ezaniZora</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;ezanZora.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ezaniIkindija.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="volumeSliderAksam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>778, 166</value>
+  </data>
+  <data name="checkBoxMujezin.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 302</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxSlijedeciNamazLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 28</value>
+  </data>
+  <data name="&gt;&gt;numericZora.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>groupBoxTester</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 20</value>
+  </data>
+  <data name="textBoxSlijedeciNamazLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ezanIkindija.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;textBoxIkindija.Name" xml:space="preserve">
+    <value>textBoxIkindija</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="comboBoxTest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 35</value>
+  </data>
+  <data name="&gt;&gt;labelLastEvent.Name" xml:space="preserve">
+    <value>labelLastEvent</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderAksam.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ezaniJacija.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TesterPojacivac.Type" xml:space="preserve">
+    <value>NAudio.Gui.VolumeSlider, NAudio.WinForms, Culture=neutral, PublicKeyToken=e279aa5131008a41</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="ezaniPodne.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 114</value>
+  </data>
+  <data name="TesterPojacivac.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 16</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>944, 465</value>
+  </data>
+  <data name="&gt;&gt;textBoxIzlazak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="checkBoxPodne.Location" type="System.Drawing.Point, System.Drawing">
+    <value>495, 114</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="ezanIkindija.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 23</value>
+  </data>
+  <data name="comboBoxTest.Items4" xml:space="preserve">
+    <value>Aksam</value>
+  </data>
+  <data name="ezaniZora.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="volumeSliderIkindija.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 16</value>
+  </data>
+  <data name="textBoxDoNamaza.Text" xml:space="preserve">
+    <value>00:00:00</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>609, 33</value>
+  </data>
+  <data name="&gt;&gt;ezaniIkindija.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderJacija.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="volumeSliderAksam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 16</value>
+  </data>
+  <data name="textBoxSada.Text" xml:space="preserve">
+    <value>00:00:00</value>
+  </data>
+  <data name="&gt;&gt;textBoxPodne.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTester.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ezanIzlazak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 87</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="textBoxSlijedeciNamaz.Text" xml:space="preserve">
+    <value>00:00</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Vremena ezana se nalaze u TXT datoteci</value>
+  </data>
+  <data name="&gt;&gt;labelLastEvent.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;textBoxAksam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxTest.Items2" xml:space="preserve">
+    <value>Podne</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>groupBoxTester</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="&gt;&gt;textBoxAksam.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderPodne.Name" xml:space="preserve">
+    <value>volumeSliderPodne</value>
+  </data>
+  <data name="labelLastEvent.Text" xml:space="preserve">
+    <value>Zadnji event ov je neki event</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Nađi datoteku</value>
+  </data>
+  <data name="ezanAksam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 164</value>
+  </data>
+  <data name="&gt;&gt;ezanIzlazak.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderJacija.Type" xml:space="preserve">
+    <value>NAudio.Gui.VolumeSlider, NAudio.WinForms, Culture=neutral, PublicKeyToken=e279aa5131008a41</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ezanPodne.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 23</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 121</value>
+  </data>
+  <data name="numericIzlazak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 20</value>
+  </data>
+  <data name="textBoxDoNamaza.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 28</value>
+  </data>
+  <data name="ezaniAksam.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ezaniZora.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Ikindija:</value>
+  </data>
+  <data name="ezanAksam.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 65</value>
+  </data>
+  <data name="volumeSliderJacija.Location" type="System.Drawing.Point, System.Drawing">
+    <value>778, 192</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxJacija.Name" xml:space="preserve">
+    <value>textBoxJacija</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxJacija.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderIkindija.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Zora:</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="textBoxAksam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 166</value>
+  </data>
+  <data name="textBoxIzlazak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ezaniIzlazak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 91</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ezaniZora.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="checkBoxMujezin.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+    <value>Button</value>
+  </data>
+  <data name="&gt;&gt;ezanJacija.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderAksam.Type" xml:space="preserve">
+    <value>NAudio.Gui.VolumeSlider, NAudio.WinForms, Culture=neutral, PublicKeyToken=e279aa5131008a41</value>
+  </data>
+  <data name="numericZora.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="ezaniIkindija.Text" xml:space="preserve">
+    <value>Ezani</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTest.Name" xml:space="preserve">
+    <value>comboBoxTest</value>
+  </data>
+  <data name="&gt;&gt;ezanPodne.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;ezanAksam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ezaniPodne.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="volumeSliderZora.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 16</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Mujezin</value>
+  </data>
+  <data name="&gt;&gt;ezaniPodne.ZOrder" xml:space="preserve">
+    <value>23</value>
   </data>
   <data name="ezaniIkindija.Location" type="System.Drawing.Point, System.Drawing">
     <value>434, 142</value>
@@ -3689,156 +2746,803 @@
         /////////////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Digitalni mujezin</value>
-    <value>ezanZora</value>
-  <data name="&gt;&gt;openFileDialogExcel.Name" xml:space="preserve">
-    <value>openFileDialogExcel</value>
-    <value>Korekcija minuta</value>
-  <data name="&gt;&gt;openFileDialogExcel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>$this</value>
   </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  <data name="&gt;&gt;openFileDialogMp3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;timerSada.Name" xml:space="preserve">
-    <value>timerSada</value>
-    <value>TesterPojacivac</value>
-  <data name="&gt;&gt;timerSada.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>True</value>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
-    <value>859, 65</value>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <value>UcitajJson</value>
-  </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ezaniAksam.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Nađi datoteku</value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Vrijeme namaza</value>
-  </data>
-  <data name="&gt;&gt;volumeSliderJacija.Name" xml:space="preserve">
-    <value>volumeSliderJacija</value>
-  </data>
-  <data name="ezaniPodne.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 17</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;monthCalendar1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MonthCalendar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxZora.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="&gt;&gt;volumeSliderIzlazak.Name" xml:space="preserve">
-    <value>volumeSliderIzlazak</value>
+  <data name="&gt;&gt;ezaniJacija.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBoxJacija.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="checkBoxMujezin.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
-    <value>Button</value>
+  <data name="&gt;&gt;openFileDialogExcel.Name" xml:space="preserve">
+    <value>openFileDialogExcel</value>
   </data>
-  <data name="textBoxSlijedeciNamaz.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;numericZora.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;ezanAksam.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;textBoxIkindija.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;textBoxSlijedeciNamazLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="textBoxIkindija.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="&gt;&gt;ezaniAksam.Name" xml:space="preserve">
+    <value>ezaniAksam</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 143</value>
+  </data>
+  <data name="ezanZora.Text" xml:space="preserve">
+    <value>ezanZora</value>
+  </data>
+  <data name="&gt;&gt;ezaniZora.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="groupBoxTester.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
-  <data name="&gt;&gt;groupBoxTester.Parent" xml:space="preserve">
+  <data name="ezanZora.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;ezanJacija.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ezaniZora.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxSlijedeciNamazLbl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="checkBoxPodne.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ezanZora.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 23</value>
+  </data>
+  <data name="textBoxIzlazak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 88</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderIzlazak.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTester.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="ezanIkindija.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 138</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 195</value>
+  </data>
+  <data name="ezanPodne.Text" xml:space="preserve">
+    <value>ezanPodne</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>groupBoxTester</value>
+  </data>
+  <data name="checkBoxMujezin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 91</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ezaniJacija.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;numericZora.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;monthCalendar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 23</value>
+  </data>
+  <data name="labelLastEvent.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxSlijedeciNamazLbl.Text" xml:space="preserve">
+    <value>Izlazak sunca</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="textBoxSlijedeciNamaz.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 28</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="&gt;&gt;TesterPojacivac.Name" xml:space="preserve">
+    <value>TesterPojacivac</value>
+  </data>
+  <data name="ezanPodne.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 23</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="volumeSliderIzlazak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>778, 89</value>
+  </data>
+  <data name="&gt;&gt;timerSada.Name" xml:space="preserve">
+    <value>timerSada</value>
+  </data>
+  <data name="comboBoxTest.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxDoNamaza.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="textBoxSada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 28</value>
+  </data>
+  <data name="&gt;&gt;textBoxZora.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 23</value>
+  </data>
+  <data name="textBoxAksam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;numericZora.Name" xml:space="preserve">
+    <value>numericZora</value>
+  </data>
+  <data name="&gt;&gt;ezanIkindija.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ezanIzlazak.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ezaniIkindija.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="volumeSliderZora.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="ezaniZora.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 65</value>
+  </data>
+  <data name="textBoxDoNamaza.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="&gt;&gt;ezanPodne.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Akšam:</value>
+  </data>
+  <data name="comboBoxTest.Items" xml:space="preserve">
+    <value>Zora</value>
+  </data>
+  <data name="checkBoxPodne.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="ezanPodne.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 112</value>
+  </data>
+  <data name="&gt;&gt;textBoxIzlazak.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;ezanZora.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="groupBoxTester.Text" xml:space="preserve">
+    <value>Testni mujezin</value>
+  </data>
+  <data name="&gt;&gt;textBoxAksam.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;textBoxExcelFajla.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ezaniIkindija.Name" xml:space="preserve">
+    <value>ezaniIkindija</value>
+  </data>
+  <data name="&gt;&gt;checkBoxMujezin.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="ezaniZora.Text" xml:space="preserve">
+    <value>Ezani</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderZora.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;checkBoxPodne.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TesterPojacivac.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ezaniIzlazak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxExcelFajla.Location" type="System.Drawing.Point, System.Drawing">
+    <value>221, 17</value>
+  </data>
+  <data name="&gt;&gt;ezanAksam.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderZora.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTester.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBoxSlijedeciNamazLbl.Name" xml:space="preserve">
+    <value>textBoxSlijedeciNamazLbl</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTest.Parent" xml:space="preserve">
+    <value>groupBoxTester</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>522, 11</value>
   </data>
   <data name="&gt;&gt;ezaniPodne.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="textBoxPodne.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
-  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;comboBoxTest.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;textBoxIzlazak.Name" xml:space="preserve">
+    <value>textBoxIzlazak</value>
+  </data>
+  <data name="&gt;&gt;ezanAksam.Name" xml:space="preserve">
+    <value>ezanAksam</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 15</value>
+  </data>
+  <data name="textBoxSlijedeciNamaz.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 53</value>
+  </data>
+  <data name="monthCalendar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 57</value>
+  </data>
+  <data name="textBoxSada.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxExcelFajla.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBoxExcelFajla.Name" xml:space="preserve">
+    <value>textBoxExcelFajla</value>
+  </data>
+  <data name="&gt;&gt;textBoxDoNamaza.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 11</value>
+  </data>
+  <data name="&gt;&gt;groupBoxTester.Name" xml:space="preserve">
+    <value>groupBoxTester</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TesterPojacivac.Parent" xml:space="preserve">
+    <value>groupBoxTester</value>
+  </data>
+  <data name="labelLastEvent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 31</value>
+  </data>
+  <data name="&gt;&gt;ezanZora.Name" xml:space="preserve">
+    <value>ezanZora</value>
+  </data>
+  <data name="ezanJacija.Text" xml:space="preserve">
+    <value>ezanAksam</value>
+  </data>
+  <data name="groupBoxTester.Size" type="System.Drawing.Size, System.Drawing">
+    <value>859, 65</value>
+  </data>
+  <data name="textBoxAksam.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Glasnoća:</value>
+  </data>
+  <data name="volumeSliderJacija.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ezanIkindija.Text" xml:space="preserve">
+    <value>ezanIkindija</value>
+  </data>
+  <data name="&gt;&gt;textBoxSlijedeciNamazLbl.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;ezanJacija.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="volumeSliderPodne.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="textBoxPodne.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="comboBoxTest.Items5" xml:space="preserve">
+    <value>Jacija</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Trenutno vrijeme</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Izazak sunca:</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;checkBoxPodne.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxPodne.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="ezaniPodne.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="textBoxExcelFajla.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ezaniJacija.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="numericZora.Location" type="System.Drawing.Point, System.Drawing">
+    <value>583, 64</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="numericZora.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 20</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderZora.Name" xml:space="preserve">
+    <value>volumeSliderZora</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ezaniZora.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxDoNamaza.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 53</value>
+  </data>
+  <data name="&gt;&gt;textBoxJacija.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="volumeSliderIzlazak.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;textBoxSlijedeciNamaz.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxJacija.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="ezaniAksam.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="textBoxSada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 53</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxMujezin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Podne:</value>
+  </data>
+  <data name="&gt;&gt;textBoxSada.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="comboBoxTest.Items3" xml:space="preserve">
+    <value>Ikindija</value>
+  </data>
+  <data name="&gt;&gt;textBoxIkindija.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;labelLastEvent.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TesterPojacivac.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 38</value>
+  </data>
+  <data name="&gt;&gt;textBoxAksam.Name" xml:space="preserve">
+    <value>textBoxAksam</value>
+  </data>
+  <data name="&gt;&gt;ezaniIzlazak.Name" xml:space="preserve">
+    <value>ezaniIzlazak</value>
+  </data>
+  <data name="&gt;&gt;ezanIzlazak.Name" xml:space="preserve">
+    <value>ezanIzlazak</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 33</value>
+  </data>
+  <data name="&gt;&gt;numericIzlazak.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderIzlazak.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxSlijedeciNamaz.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 30pt</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
   </data>
-  <data name="textBoxDoNamaza.Text" xml:space="preserve">
-    <value>00:00:00</value>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="ezaniAksam.Text" xml:space="preserve">
-    <value>Ezani</value>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderIzlazak.Name" xml:space="preserve">
+    <value>volumeSliderIzlazak</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Vaktija</value>
+  </data>
+  <data name="&gt;&gt;textBoxSada.Name" xml:space="preserve">
+    <value>textBoxSada</value>
+  </data>
+  <data name="volumeSliderZora.Location" type="System.Drawing.Point, System.Drawing">
+    <value>778, 65</value>
+  </data>
+  <data name="&gt;&gt;textBoxJacija.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;monthCalendar1.Name" xml:space="preserve">
+    <value>monthCalendar1</value>
+  </data>
+  <data name="volumeSliderIkindija.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 3, 4, 3</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 11</value>
+  </data>
+  <data name="volumeSliderJacija.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 16</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Jacija:</value>
+  </data>
+  <data name="&gt;&gt;timerSada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderIzlazak.Type" xml:space="preserve">
+    <value>NAudio.Gui.VolumeSlider, NAudio.WinForms, Culture=neutral, PublicKeyToken=e279aa5131008a41</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderJacija.Name" xml:space="preserve">
+    <value>volumeSliderJacija</value>
+  </data>
+  <data name="&gt;&gt;openFileDialogExcel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="&gt;&gt;textBoxZora.Name" xml:space="preserve">
+    <value>textBoxZora</value>
+  </data>
+  <data name="labelLastEvent.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="checkBoxMujezin.Text" xml:space="preserve">
+    <value>Uključen</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>groupBoxTester</value>
+  </data>
+  <data name="&gt;&gt;textBoxExcelFajla.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderPodne.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBoxSlijedeciNamaz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxPodne.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ezanIkindija.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ezaniAksam.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxIkindija.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;volumeSliderPodne.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>916, 139</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ezanIzlazak.Text" xml:space="preserve">
+    <value>button3</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ezaniPodne.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="&gt;&gt;monthCalendar1.ZOrder" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="volumeSliderAksam.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="&gt;&gt;ezaniIzlazak.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Vrijeme namaza</value>
+  </data>
+  <data name="&gt;&gt;textBoxZora.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;ezanIzlazak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ezanPodne.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ezaniJacija.Name" xml:space="preserve">
+    <value>ezaniJacija</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ezaniIzlazak.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="volumeSliderIkindija.Location" type="System.Drawing.Point, System.Drawing">
+    <value>778, 140</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>511, 15</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="ezaniAksam.Text" xml:space="preserve">
+    <value>Ezani</value>
+  </data>
+  <data name="&gt;&gt;textBoxZora.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
   <data name="&gt;&gt;textBoxSlijedeciNamaz.Name" xml:space="preserve">
     <value>textBoxSlijedeciNamaz</value>
   </data>
-  <data name="ezaniPodne.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBoxDoNamaza.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;ezaniIkindija.Name" xml:space="preserve">
-    <value>ezaniIkindija</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>90, 11</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>bs</value>
-  </metadata>
-  <metadata name="timerSada.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="ezaniJacija.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  </data>
+  <data name="checkBoxMujezin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 27</value>
+  </data>
+  <data name="numericIzlazak.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxSlijedeciNamazLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 53</value>
+  </data>
+  <data name="&gt;&gt;textBoxIzlazak.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxIkindija.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="ezaniJacija.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 194</value>
+  </data>
+  <data name="ezaniAksam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>434, 168</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="$this.TrayHeight" type="System.Int32, mscorlib">
     <value>69</value>
-  </metadata>
-  <metadata name="textBoxExcelFajla.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="openFileDialogExcel.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>124, 17</value>
-  </metadata>
-  <metadata name="openFileDialogMp3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  </data>
+  <data name="openFileDialogMp3.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>285, 17</value>
-  </metadata>
+  </data>
+  <data name="$this.Language" type="System.Globalization.CultureInfo, mscorlib">
+    <value>bs</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="timerSada.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="textBoxExcelFajla.Locked" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="openFileDialogExcel.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>124, 17</value>
+  </data>
 </root>

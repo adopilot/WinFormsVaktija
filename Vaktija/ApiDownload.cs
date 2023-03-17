@@ -26,10 +26,10 @@ namespace Vaktija
         public ApiDownload()
         {
             InitializeComponent();
-            this.godinaNumeric.Minimum = 2023;
-            this.godinaNumeric.Maximum = 2100;
+            //this.godinaNumeric.Minimum = 2023;
+            //this.godinaNumeric.Maximum = 2100;
 
-            this.godinaNumeric.Value = DateTime.Today.Year;
+            //this.godinaNumeric.Value = DateTime.Today.Year;
         }
 
         private async void button1_Click(object sender, EventArgs e)
@@ -102,7 +102,7 @@ namespace Vaktija
                 return false;
             }
 
-                this.Path = System.IO.Path.Combine(Environment.CurrentDirectory, $"vakts_{ix}_{this.godinaNumeric.Value}.txt");
+                //this.Path = System.IO.Path.Combine(Environment.CurrentDirectory, $"vakts_{ix}_{this.godinaNumeric.Value}.txt");
 
             if (File.Exists(this.Path))
             {
@@ -116,7 +116,7 @@ namespace Vaktija
                     return false;
                 }
             }
-                File.WriteAllText(this.Path, json);
+               // File.WriteAllText(this.Path, json);
 
             return true;
 

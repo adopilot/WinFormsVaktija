@@ -666,7 +666,7 @@ namespace Vaktija
 
             }
         }
-
+        /*
         private void button4_Click_1(object sender, EventArgs e)
         {
             ApiDownload apiDownload = new ApiDownload();
@@ -684,5 +684,6 @@ namespace Vaktija
             }
 
         }
+        */
     }
 }
