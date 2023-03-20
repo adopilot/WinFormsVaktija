@@ -1,9 +1,12 @@
 ﻿@page "/"
 @using AndroidMujezin.Modeli;
 @using AndroidMujezin.Servisi;
-
+@using Microsoft.Maui;
+@using Microsoft.AspNetCore.Components.WebView.Maui;
+@using System.Reflection;
 @inject Servisi.VakatServis _vakatServis;
-
+@inject Servisi.ConfigServis _configServis;
+@inject IJSRuntime JsInterop;
 <h3>Postavke za ezane</h3>
 <div class="container-fluid">
 <ul>
@@ -16,8 +19,8 @@
     <li><AnchorLink href="#Jacija">Jacija</AnchorLink></li>
 </ul>
 <hr />
-<EditForm EditContext="@EditContext">
-<DataAnnotationsValidator />
+ 
+        
     @foreach (var namaz in namazi)
     {
         <div id="@namaz.Namaz">
@@ -29,14 +32,14 @@
             <label class="form-check-label">
                 <span class="lead">Ezani</span>
             </label>
-                        <input class="form-check-input" type="checkbox" @bind="namaz.Ezani">
+                        <input class="form-check-input" @oninput="(e)=>{ this.OnModelChanged(e, namaz.Namaz , nameof(namaz.Ezani));}" type="checkbox" @bind="namaz.Ezani">
             
         </div>
     </div>
         <div class="col-6">
     <div class="input-group">
       <div class="input-group-text">Korekcija minuta: </div>
-                        <input type="number" class="form-control" @bind="namaz.KorekcijaMinta" min="0" max="100" placeholder="Korekcija minuta">
+                        <input type="number" class="form-control" @onchange="(e)=>{ this.OnModelChanged(e, namaz.Namaz, nameof(namaz.KorekcijaMinta));} " value="@namaz.KorekcijaMinta"  min="0" max="100" placeholder="Korekcija minuta">
     </div>
   </div>
 </div>
@@ -47,13 +50,13 @@
             <label class="form-check-label">
                 <span class="lead">Obavjesti me</span>
             </label>
-                        <input class="form-check-input" type="checkbox" @bind="namaz.Notifikuj">
+                        <input class="form-check-input" @oninput="(e)=>{ this.OnModelChanged(e, namaz.Namaz,nameof(namaz.Notifikuj));} " type="checkbox" @bind="namaz.Notifikuj">
         </div>
     </div>
         <div class="col-6">
         <div class="input-group">
                 <div class="input-group-text">Korekcija minuta: </div>
-                        <input type="number" class="form-control" @bind="namaz.NotifikujMinutaPrije" min="0" max="100" placeholder="Korekcija minuta">
+                        <input type="number" class="form-control" @oninput="(e)=>{ this.OnModelChanged(e, namaz.Namaz,nameof(namaz.NotifikujMinutaPrije));} " @bind="namaz.NotifikujMinutaPrije" min="0" max="100" placeholder="Korekcija minuta">
         </div>
     </div>
     
@@ -61,8 +64,8 @@
 <div class="row ">
         <div class="col-12">
     <div class="input-group">
-        <label class="input-group-text" >Audio fajla:</label>
-        <select class="form-select" aria-label="Default select example">
+        <label class="input-group-text"  >Audio fajla:</label>
+                        <select class="form-select" @oninput="(e)=>{ this.OnModelChanged(e, namaz.Namaz,nameof(namaz.FajlaZaEzan));}" @bind="namaz.FajlaZaEzan" aria-label="Default select example">
             <option selected>Open this select menu</option>
             <option value="1">One</option>
             <option value="2">Two</option>
@@ -73,38 +76,49 @@
 </div>
 <div class="row">
                 <label class="form-label">Jačina zvuka ezana (volume: @namaz.Volume %)</label>
-                <input type="range" class="form-range" @bind="namaz.Volume">
+                <input type="range" @oninput="(e)=>{ this.OnModelChanged(e, namaz.Namaz,nameof(namaz.Volume));} " class="form-range" @bind="namaz.Volume">
     </div>
     </div>
     <hr />
     }
-    </EditForm>
+
+        <button type="submit" class="btn btn-primary">Spasi</button>
     <hr />
-    <button type="button" class="btn btn-primary" @onclick="spasi">Spasi</button>
+    
 </div>
 
 
 @code {
-    public NamazModel zora = new NamazModel() { Namaz = NamazEnum.Zora };
-    public NamazModel izlazak = new NamazModel() { Namaz = NamazEnum.IzlazakSunca };
-    public NamazModel podne = new NamazModel() { Namaz = NamazEnum.Podne };
-    public NamazModel dzuma = new NamazModel() { Namaz = NamazEnum.Dzuma };
-    public NamazModel ikindija = new NamazModel() { Namaz = NamazEnum.Ikindija };
-    public NamazModel aksam = new NamazModel() { Namaz = NamazEnum.Aksam };
-    public NamazModel jacija = new NamazModel() { Namaz = NamazEnum.Jacija };
-    private EditContext EditContext;
+
+
+    private NamazModel zora = new NamazModel() { Namaz = NamazEnum.Zora };
+    public NamazModel izlazak { get; set; } = new NamazModel() { Namaz = NamazEnum.IzlazakSunca };
+    public NamazModel podne { get; set; } = new NamazModel() { Namaz = NamazEnum.Podne };
+    public NamazModel dzuma { get; set; } = new NamazModel() { Namaz = NamazEnum.Dzuma };
+    public NamazModel ikindija { get; set; } = new NamazModel() { Namaz = NamazEnum.Ikindija };
+    public NamazModel aksam { get; set; } = new NamazModel() { Namaz = NamazEnum.Aksam };
+    public NamazModel jacija { get; set; } = new NamazModel() { Namaz = NamazEnum.Jacija };
     List<NamazModel> namazi = new List<NamazModel>();
-
-
+    private IJSRuntime jsInterop;
+    private CustomValidation? customValidation;
     //private readonly VakatServis _vakatServis;
+
+
+
 
     protected override void OnInitialized()
     {
 
+        var configModel = _configServis.GetNamazModel();
+
+        zora = configModel.Zora;
+        izlazak = configModel.IzlazakSunca;
+        podne = configModel.Podne;
+        dzuma = configModel.Dzuma;
+        ikindija = configModel.Ikindija;
+        aksam = configModel.Aksam;
 
 
-
-        //_vakatServis = vakatServis;
         namazi.Add(zora);
         namazi.Add(izlazak);
         namazi.Add(podne);
@@ -113,19 +127,53 @@
         namazi.Add(aksam);
         namazi.Add(jacija);
 
-        EditContext = new EditContext(namazi);
-        EditContext.OnFieldChanged += EditContext_OnFieldChanged;
+
+
         base.OnInitialized();
     }
 
-    private void spasi()
+    private async Task IdiNaAncon(string targetId)
     {
-        var ado = namazi;
+        if (!string.IsNullOrEmpty(targetId))
+        {
+            // If the target ID has been specified, we know this is an anchor link that we need to scroll
+            // to, so we call the JavaScript method to take care of this for us.
+            await this.JsInterop.InvokeVoidAsync("anchorLink.scrollIntoView", targetId);
+        }
     }
-    private void EditContext_OnFieldChanged(object sender, FieldChangedEventArgs e)
+    private void OnModelChanged(ChangeEventArgs e, NamazEnum namaz ,string propetyName)
     {
-        Console.Write($"{e.FieldIdentifier.FieldName}");
-        
+        /*
+        var namazModel = namazi.Where(d => d.Namaz == namaz).FirstOrDefault();
+
+
+
+        Type myClassType = typeof(NamazModel); // get the type of the class
+
+        // use Reflection to get the PropertyInfo object for the property
+        PropertyInfo propertyInfo = myClassType.GetProperty(propetyName);
+
+        // use the PropertyInfo.PropertyType property to get the type of the property
+        Type propertyType = propertyInfo.PropertyType;
+
+        try
+        {
+            object result = Convert.ChangeType(e.Value, Nullable.GetUnderlyingType(propertyType) ?? propertyType);
+            namazModel.GetType().GetProperty(propetyName).SetValue(namazModel, e.Value);
+            _configServis.SaveNamazConfigSingle(namazModel);
+
+        }
+        catch (Exception ec)
+        {
+
+        }
+
+
+
+        //_configServis.SaveNamazConfigSingle(namazModel);
+        //_configServis.SaveNamazConfigProperty<NamazModel>(namaz, propetyName, ado);
+        */
     }
+    
 }
    

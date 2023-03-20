@@ -126,6 +126,32 @@ namespace AndroidMujezin.Servisi
             return model;
 
         }
-      
+
+        public NamazModel NamazModelSingle(NamazEnum namaz)
+        {
+            
+            string Zora = Preferences.Get(namaz.ToString(), string.Empty);
+            
+            if (!string.IsNullOrEmpty(Zora))
+                return JsonSerializer.Deserialize<NamazModel>(Zora, options: _serializerOptions);
+
+            return new NamazModel() { Namaz = namaz };
+
+
+        }
+        public void SaveNamazConfigSingle(NamazModel namazModel)
+        {
+            string Zora = JsonSerializer.Serialize((namazModel ?? new NamazModel() { Namaz = NamazEnum.Zora }), options: _serializerOptions);
+            Preferences.Set(namazModel.Namaz.ToString(), Zora);
+        }
+        public void SaveNamazConfigProperty<T>(NamazEnum namaz, string propertyName, T value)
+        {
+            var namazModel = NamazModelSingle(namaz);
+            //var namazModel = namazConfig.GetType().GetProperty(namaz.ToString()).GetValue(namazConfig) as NamazModel;
+            namazModel.GetType().GetProperty(propertyName).SetValue(namazModel, value);
+            SaveNamazConfigSingle(namazModel);
+        }
+
+
     }
 }

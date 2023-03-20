@@ -24,11 +24,11 @@ namespace AndroidMujezin.Modeli
     {
         public NamazEnum Namaz { get; set; }
         public bool? Ezani { get; set; }
-        public int KorekcijaMinta { get; set; }
+        public int? KorekcijaMinta { get; set; }
         public bool U12 { get; set; }
         public bool? Notifikuj { get; set; }
-        public int NotifikujMinutaPrije { get; set; }
-        public int Volume { get; set; } = 100;
+        public int? NotifikujMinutaPrije { get; set; }
+        public int? Volume { get; set; } = 100;
         public string FajlaZaEzan { get; set; }
         public DateTime Satnica { get; set; }
 
